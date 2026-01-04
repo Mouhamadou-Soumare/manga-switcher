@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* --- COULEURS PERSONNALISÉES --- */
+  
+  /* Primary (Violet) */
+  --color-primary: #5646F5;
+  --color-primary-hover: #4338CA;
+  --color-primary-light: #E0E7FF;
+
+  /* Sidebar (Sombre) */
+  --color-sidebar-bg: #131620;
+  --color-sidebar-active: #1F2937;
+  --color-sidebar-hover: #1F2937;
+  --color-sidebar-text: #9CA3AF;
+
+  /* Backgrounds */
+  --color-background: #F4F5F9;
+  --color-background-card: #FFFFFF;
+
+  /* Textes */
+  --color-text-main: #111827;
+  --color-text-secondary: #6B7280;
+
+  /* Status (Admin) */
+  --color-status-pending: #FEF3C7;
+  --color-status-pending-text: #D97706;
+  --color-status-new: #DBEAFE;
+  --color-status-new-text: #2563EB;
+  --color-status-checkpoint: #FFEDD5;
+  --color-status-checkpoint-text: #C2410C;
+
+  /* --- ARRONDIS --- */
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Application des styles de base */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--color-background);
+  color: var(--color-text-main);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

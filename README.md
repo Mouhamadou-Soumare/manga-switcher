@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MangaSwitcher
 
-## Getting Started
+Find exactly where to continue in the manga after watching the anime.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Instant anime search
+- Precise anime → manga chapter mapping
+- Community voting system
+- Open contribution model
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 15 (App Router) + TypeScript
+- Tailwind CSS 4
+- Supabase (PostgreSQL)
+- Jikan API (MyAnimeList)
+- Vercel deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Quick Start
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js 20+
+- Supabase account (free tier)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone and install
+   ```bash
+   git clone https://github.com/your-username/manga_switcher.git
+   cd manga_switcher
+   npm install
+   ```
 
-## Deploy on Vercel
+2. Set up Supabase
+   - Create project at [supabase.com](https://supabase.com)
+   - Run `supabase/migrations/20240103000000_initial_schema.sql` in SQL Editor
+   - Copy URL and anon key
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Configure environment
+   ```bash
+   cp .env.example .env.local
+   # Add your Supabase credentials to .env.local
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Run development server
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000)
+
+## Project Structure
+
+- `/app` - Next.js App Router pages and API routes
+- `/components` - React components
+- `/lib` - Utilities (fingerprinting, Supabase client)
+- `/supabase` - Database schema and migrations
+
+## Database Schema
+
+### Core Tables
+
+**animes**
+- `id` (UUID, PK)
+- `mal_id` (BIGINT, unique) - MyAnimeList ID
+- `title`, `slug` (unique), `image`
+- `updated_at`
+
+**checkpoints**
+- `id` (UUID, PK)
+- `anime_id` (UUID, FK → animes)
+- `mal_id` (BIGINT)
+- `type` (SEASON/MOVIE/OVA/SPECIAL/ARC)
+- `season`, `episode`, `chapter` (required), `volume`
+- `label`, `note`
+- `is_canon` (BOOLEAN) - Canon vs filler content
+- `upvotes`, `downvotes` (INTEGER)
+- `created_at`
+
+### Voting System Tables
+
+**votes**
+- `id` (UUID, PK)
+- `checkpoint_id` (UUID, FK → checkpoints)
+- `voter_fingerprint` (TEXT) - SHA-256 hash
+- `vote_type` ('up' | 'down')
+- `ip_address` (INET), `user_agent`
+- `created_at`, `updated_at`
+- **Constraint:** UNIQUE(checkpoint_id, voter_fingerprint)
+
+**vote_rate_limits**
+- `id` (UUID, PK)
+- `voter_fingerprint` (TEXT, unique)
+- `vote_count`, `window_start`, `last_vote_at`
+- `is_suspicious` (BOOLEAN), `suspicious_reason`
+- **Rate limiting:** 10 votes/hour, 3s cooldown
+
+## Routes
+
+- `/` - Homepage with anime search
+- `/anime/[slug]` - Anime detail page (e.g., `/anime/naruto-shippuden`)
+
+## Server Actions
+
+- `addCheckpoint()` - Submit new anime → manga mapping
+- `voteForCheckpoint()` - Vote on checkpoint accuracy
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
+
+## Roadmap
+
+- [ ] Admin moderation system
+- [ ] User authentication
+- [ ] Public API
+- [ ] Multi-language support (EN/FR)
+
+## License
+
+MIT
