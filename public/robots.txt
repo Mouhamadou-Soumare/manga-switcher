@@ -4,6 +4,3 @@ Allow: /
 
 # Host
 Host: https://mangaswitcher.vercel.app
-
-# Sitemaps
-Sitemap: https://mangaswitcher.vercel.app/sitemap.xml

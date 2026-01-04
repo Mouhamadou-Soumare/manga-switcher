@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { ThumbsUp, ThumbsDown, Loader2, Shield } from "lucide-react";
 import { voteForCheckpoint } from "@/app/actions";
 import { getVisitorFingerprint } from "@/lib/fingerprint";
+import { useTranslations } from 'next-intl';
 
 interface Props {
   checkpointId: string;
@@ -12,6 +13,7 @@ interface Props {
 }
 
 export default function VoteButtons({ checkpointId, initialUpvotes, initialDownvotes }: Props) {
+  const t = useTranslations('votes');
   const [upvotes, setUpvotes] = useState(initialUpvotes);
   const [downvotes, setDownvotes] = useState(initialDownvotes);
   const [userVote, setUserVote] = useState<'up' | 'down' | null>(null);
@@ -107,15 +109,15 @@ export default function VoteButtons({ checkpointId, initialUpvotes, initialDownv
 
       // Gérer les différents types d'erreurs
       if (result.errorCode === 'RATE_LIMIT_EXCEEDED') {
-        setErrorMessage('Limite de votes atteinte (10/heure)');
+        setErrorMessage(t('rateLimit'));
       } else if (result.errorCode === 'COOLDOWN_ACTIVE') {
         setCooldownSeconds(3);
-        setErrorMessage('Attendez quelques secondes...');
+        setErrorMessage(t('cooldown'));
       } else if (result.errorCode === 'CAPTCHA_REQUIRED') {
         setShowCaptcha(true);
-        setErrorMessage('Validation anti-spam nécessaire');
+        setErrorMessage(t('captchaRequired'));
       } else {
-        setErrorMessage(result.message || 'Erreur lors du vote');
+        setErrorMessage(result.message || t('error'));
       }
     } else {
       // Succès - activer cooldown préventif
@@ -130,7 +132,7 @@ export default function VoteButtons({ checkpointId, initialUpvotes, initialDownv
     return (
       <div className="flex items-center gap-2 bg-gray-50 px-3 py-1.5 rounded-lg border border-gray-100">
         <Loader2 className="w-4 h-4 text-gray-400 animate-spin" />
-        <span className="text-xs text-gray-400">Chargement...</span>
+        <span className="text-xs text-gray-400">{t('loading')}</span>
       </div>
     );
   }
@@ -193,9 +195,9 @@ export default function VoteButtons({ checkpointId, initialUpvotes, initialDownv
       {/* CAPTCHA modal (placeholder - intégrer hCaptcha ou reCAPTCHA) */}
       {showCaptcha && (
         <div className="p-3 bg-amber-50 border border-amber-200 rounded-lg">
-          <p className="text-xs text-amber-800 mb-2">Validation anti-spam requise</p>
+          <p className="text-xs text-amber-800 mb-2">{t('captchaTitle')}</p>
           <p className="text-xs text-amber-600">
-            Veuillez contacter un administrateur si vous pensez qu'il s'agit d'une erreur.
+            {t('captchaDescription')}
           </p>
         </div>
       )}

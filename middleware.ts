@@ -3,14 +3,21 @@ import type { NextRequest } from 'next/server';
 import { supabase } from '@/lib/supabaseClient';
 
 // =====================================================
-// Middleware: Handle Old ID-based URLs
+// Middleware: Handle Old ID-based URLs & i18n
 // =====================================================
-// Redirects /anime/[number] to /anime/[slug] with 301
-// Only runs when the path matches a numeric anime ID
+// 1. Redirects /anime/[number] to /anime/[slug] with 301
+// 2. Sets locale cookie for internationalization
 // =====================================================
 
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const response = NextResponse.next();
+
+  // Set locale cookie if not already set
+  const locale = request.cookies.get('NEXT_LOCALE')?.value || 'fr';
+  if (!request.cookies.has('NEXT_LOCALE')) {
+    response.cookies.set('NEXT_LOCALE', locale);
+  }
 
   // Check if URL matches /anime/[number] pattern
   const match = pathname.match(/^\/anime\/(\d+)$/);
@@ -29,15 +36,18 @@ export async function middleware(request: NextRequest) {
       // Redirect to slug-based URL with 301 permanent redirect
       const url = request.nextUrl.clone();
       url.pathname = `/anime/${anime.slug}`;
-      return NextResponse.redirect(url, { status: 301 });
+      const redirectResponse = NextResponse.redirect(url, { status: 301 });
+      // Preserve locale cookie in redirect
+      redirectResponse.cookies.set('NEXT_LOCALE', locale);
+      return redirectResponse;
     }
   }
 
   // Continue to the next middleware or page
-  return NextResponse.next();
+  return response;
 }
 
 // Configure which routes this middleware applies to
 export const config = {
-  matcher: '/anime/:path*',
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 };

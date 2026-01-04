@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages, getLocale, getTranslations } from 'next-intl/server';
 import "./globals.css";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,51 +15,79 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "MangaSwitcher - De l'anime au scan",
-  description: "Trouve instantanément à quel chapitre reprendre le manga après avoir vu l'anime.",
-  applicationName: "MangaSwitcher",
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations('meta');
+  const locale = await getLocale();
 
-  icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180' },
-    ],
-    other: [
-      {
-        rel: 'icon',
-        url: '/android-chrome-192x192.png',
-        sizes: '192x192',
-        type: 'image/png',
-      },
-      {
-        rel: 'icon',
-        url: '/android-chrome-512x512.png',
-        sizes: '512x512',
-        type: 'image/png',
-      },
-    ],
-  },
-  manifest: '/site.webmanifest',
-};
+  return {
+    title: t('defaultTitle'),
+    description: t('defaultDescription'),
+    applicationName: "MangaSwitcher",
+    metadataBase: new URL('https://manga-switcher.vercel.app'),
 
-export default function RootLayout({
+    openGraph: {
+      title: t('defaultTitle'),
+      description: t('defaultDescription'),
+      type: 'website',
+      locale: locale,
+      alternateLocale: locale === 'fr' ? 'en' : 'fr',
+    },
+
+    twitter: {
+      card: 'summary_large_image',
+      title: t('defaultTitle'),
+      description: t('defaultDescription'),
+    },
+
+    icons: {
+      icon: [
+        { url: '/favicon.ico' },
+        { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+        { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      ],
+      apple: [
+        { url: '/apple-touch-icon.png', sizes: '180x180' },
+      ],
+      other: [
+        {
+          rel: 'icon',
+          url: '/android-chrome-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          rel: 'icon',
+          url: '/android-chrome-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+      ],
+    },
+    manifest: '/site.webmanifest',
+  };
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
-    <html lang="fr">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-text-main`}
       >
-        <main className="min-h-screen flex flex-col">
-          {children}
-        </main>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <div className="fixed top-4 right-4 z-50">
+            <LanguageSwitcher />
+          </div>
+          <main className="min-h-screen flex flex-col">
+            {children}
+          </main>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

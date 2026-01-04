@@ -4,6 +4,7 @@ import { useState } from "react";
 import { X, BookOpen, Tv, Loader2, Plus, PlusCircle } from "lucide-react";
 import { addCheckpoint } from "@/app/actions";
 import type { CheckpointType } from "@/lib/types";
+import { useTranslations } from 'next-intl';
 
 interface Props {
   malId: number;
@@ -13,6 +14,7 @@ interface Props {
 }
 
 export default function ContributionForm({ malId, animeTitle, animeImage, variant = "hero" }: Props) {
+  const t = useTranslations('contribution');
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -34,7 +36,7 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
     if (result.success) {
       setIsOpen(false);
     } else {
-      alert("Erreur: " + result.message);
+      alert(t('error') + result.message);
     }
   };
 
@@ -42,21 +44,21 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
     <>
       {/* Affichage conditionnel du bouton */}
       {variant === "hero" ? (
-        <button 
+        <button
           onClick={() => setIsOpen(true)}
           className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 rounded-2xl transition-colors shadow-lg shadow-primary/30 flex items-center justify-center gap-2"
         >
           <PlusCircle className="w-5 h-5" />
-          <span>Indiquer le chapitre</span>
+          <span>{t('indicateChapter')}</span>
         </button>
       ) : (
         /* Style "+ Manquant ?" de la maquette */
-        <button 
+        <button
           onClick={() => setIsOpen(true)}
           className="flex items-center gap-1 text-primary font-bold text-xs uppercase tracking-wide hover:underline transition-all"
         >
           <Plus className="w-4 h-4" />
-          <span>Manquant ?</span>
+          <span>{t('missing')}</span>
         </button>
       )}
 
@@ -72,19 +74,19 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
 
             <form action={clientAction} className="space-y-5">
               <div className="text-center space-y-1">
-                <h3 className="text-xl font-bold text-gray-900">Nouveau point d'arrêt</h3>
+                <h3 className="text-xl font-bold text-gray-900">{t('newCheckpoint')}</h3>
                 <p className="text-sm text-gray-500">{animeTitle}</p>
               </div>
 
               {/* Type selector */}
               <div className="space-y-2">
-                <label className="text-sm font-bold text-gray-700">Type de contenu</label>
+                <label className="text-sm font-bold text-gray-700">{t('contentType')}</label>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
                   {[
-                    { value: 'SEASON', label: 'Saison', emoji: '📺' },
-                    { value: 'MOVIE', label: 'Film', emoji: '🎬' },
-                    { value: 'ARC', label: 'Arc', emoji: '📖' },
-                    { value: 'SPECIAL', label: 'OVA/Spécial', emoji: '⭐' }
+                    { value: 'SEASON', label: t('season'), emoji: '📺' },
+                    { value: 'MOVIE', label: t('movie'), emoji: '🎬' },
+                    { value: 'ARC', label: t('arc'), emoji: '📖' },
+                    { value: 'SPECIAL', label: t('special'), emoji: '⭐' }
                   ].map(({ value, label, emoji }) => (
                     <button
                       key={value}
@@ -106,12 +108,12 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
               {/* Conditional: Season number (only for SEASON type) */}
               {type === 'SEASON' && (
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-gray-700">Numéro de saison</label>
+                  <label className="text-sm font-bold text-gray-700">{t('seasonNumber')}</label>
                   <input
                     name="season"
                     type="number"
                     min="1"
-                    placeholder="Ex: 2"
+                    placeholder={t('seasonPlaceholder')}
                     className="w-full p-3 rounded-xl border-2 border-gray-200 text-center focus:border-primary outline-none"
                     required
                   />
@@ -121,13 +123,13 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
               {/* Conditional: Arc name (only for ARC type) */}
               {type === 'ARC' && (
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-gray-700">Nom de l'arc</label>
+                  <label className="text-sm font-bold text-gray-700">{t('arcName')}</label>
                   <input
                     name="arcName"
                     type="text"
                     value={arcName}
                     onChange={(e) => setArcName(e.target.value)}
-                    placeholder="Ex: Marineford, Wano..."
+                    placeholder={t('arcPlaceholder')}
                     className="w-full p-3 rounded-xl border-2 border-gray-200 focus:border-primary outline-none"
                     required
                   />
@@ -138,13 +140,13 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
               <div className="space-y-2">
                 <label className="text-sm font-bold text-gray-700 flex items-center gap-2">
                   <Tv className="w-4 h-4 text-primary" />
-                  Dernier épisode {type === 'MOVIE' && '(équivalent)'}
+                  {type === 'MOVIE' ? t('lastEpisodeEquivalent') : t('lastEpisode')}
                 </label>
                 <input
                   name="episode"
                   type="number"
                   min="1"
-                  placeholder={type === 'MOVIE' ? 'Ex: 45 (optionnel)' : 'Ex: 12'}
+                  placeholder={type === 'MOVIE' ? t('episodePlaceholderOptional') : t('episodePlaceholder')}
                   className="w-full p-3 rounded-xl border-2 border-gray-200 text-center focus:border-primary outline-none"
                 />
               </div>
@@ -159,9 +161,9 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
                     className="w-5 h-5 accent-primary"
                   />
                   <div className="flex-1">
-                    <span className="font-bold text-sm text-amber-900 block">Contenu canon</span>
+                    <span className="font-bold text-sm text-amber-900 block">{t('canonContent')}</span>
                     <p className="text-xs text-amber-700">
-                      Fait partie de l'histoire principale du manga
+                      {t('canonDescription')}
                     </p>
                   </div>
                 </label>
@@ -170,13 +172,13 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
               {/* Chapitre (always shown) */}
               <div className="space-y-2">
                 <label className="text-sm font-bold text-primary flex items-center gap-2">
-                  <BookOpen className="w-4 h-4" /> Reprendre au Chapitre
+                  <BookOpen className="w-4 h-4" /> {t('resumeAtChapter')}
                 </label>
                 <input
                   name="chapter"
                   type="number"
                   min="1"
-                  placeholder="Ex: 138"
+                  placeholder={t('chapterPlaceholder')}
                   className="w-full p-4 rounded-xl border-2 border-primary/10 bg-primary/5 text-primary font-bold text-xl text-center focus:border-primary outline-none"
                   required
                 />
@@ -184,24 +186,24 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
 
               {/* Volume (always shown - NEW!) */}
               <div className="space-y-2">
-                <label className="text-sm font-bold text-gray-700">Tome (optionnel)</label>
+                <label className="text-sm font-bold text-gray-700">{t('volume')}</label>
                 <input
                   name="volume"
                   type="number"
                   min="1"
                   value={volume}
                   onChange={(e) => setVolume(e.target.value)}
-                  placeholder="Ex: 15"
+                  placeholder={t('volumePlaceholder')}
                   className="w-full p-3 rounded-xl border-2 border-gray-200 text-center focus:border-primary outline-none"
                 />
               </div>
 
               {/* Note */}
               <div className="space-y-2">
-                <label className="text-xs font-bold text-gray-400 uppercase">Note (Optionnel)</label>
+                <label className="text-xs font-bold text-gray-400 uppercase">{t('note')}</label>
                 <textarea
                   name="note"
-                  placeholder="Ex: Le film couvre ce chapitre..."
+                  placeholder={t('notePlaceholder')}
                   className="w-full p-3 rounded-xl border-2 border-gray-200 text-sm resize-none focus:border-primary outline-none"
                   rows={2}
                 />
@@ -216,7 +218,7 @@ export default function ContributionForm({ malId, animeTitle, animeImage, varian
                 disabled={isSubmitting}
                 className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 rounded-xl transition-all shadow-lg flex justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? <Loader2 className="animate-spin" /> : "Valider et Publier"}
+                {isSubmitting ? <Loader2 className="animate-spin" /> : t('submit')}
               </button>
             </form>
           </div>

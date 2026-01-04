@@ -1,8 +1,11 @@
+import { useTranslations } from 'next-intl';
 import SearchAnime from "../components/SearchAnime";
 import TrendingAnimes from "../components/TrendingAnimes";
 import Logo from "@/components/Logo";
 
 export default function Home() {
+  const t = useTranslations('home');
+
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center space-y-8">
 
@@ -18,11 +21,11 @@ export default function Home() {
 
       <div className="space-y-4 max-w-2xl lg:max-w-3xl xl:max-w-4xl">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-text-main">
-          Tu as fini <br />
-          <span className="text-primary">l'anime ?</span>
+          {t('title')} <br />
+          <span className="text-primary">{t('titleHighlight')}</span>
         </h1>
         <p className="text-lg md:text-xl lg:text-2xl text-text-secondary">
-          Trouve exactement où reprendre le manga.
+          {t('subtitle')}
         </p>
       </div>
 
@@ -30,7 +33,7 @@ export default function Home() {
 
       <TrendingAnimes />
 
-     
+
 
     </div>
   );

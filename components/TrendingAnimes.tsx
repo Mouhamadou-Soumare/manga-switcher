@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TrendingUp } from "lucide-react";
+import { getTranslations } from 'next-intl/server';
 
 // Helper function to generate slug from title
 function generateSlug(title: string): string {
@@ -48,13 +49,14 @@ async function getTrendingAnimes(): Promise<TrendingAnime[]> {
 
 export default async function TrendingAnimes() {
   const trendingAnimes = await getTrendingAnimes();
+  const t = await getTranslations('trending');
 
   return (
     <div className="w-full max-w-xl lg:max-w-2xl xl:max-w-3xl">
       <div className="flex items-center justify-center gap-2 mb-4">
         <TrendingUp className="w-4 h-4 text-primary" />
         <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-          Populaires en ce moment
+          {t('title')}
         </span>
       </div>
 
@@ -98,7 +100,7 @@ export default async function TrendingAnimes() {
 
       {/* Subtle hint text */}
       <p className="text-xs text-slate-400 text-center mt-3">
-        Clique pour voir où reprendre le manga
+        {t('hint')}
       </p>
     </div>
   );

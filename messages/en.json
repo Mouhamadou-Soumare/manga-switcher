@@ -1,0 +1,94 @@
+{
+  "home": {
+    "title": "Finished the",
+    "titleHighlight": "anime?",
+    "subtitle": "Find exactly where to resume in the manga.",
+    "searchPlaceholder": "Search for an anime (e.g., One Piece)"
+  },
+  "search": {
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "noResultsDescription": "Try another title or check the spelling",
+    "clear": "Clear search"
+  },
+  "anime": {
+    "backToSearch": "Back to search",
+    "finished": "Finished",
+    "ongoing": "Ongoing",
+    "resumeAt": "Resume at",
+    "chapter": "Chapter",
+    "volume": "Volume",
+    "season": "Season",
+    "movie": "Movie",
+    "arc": "Arc",
+    "nonCanon": "Non-canon",
+    "noDataYet": "No data yet",
+    "helpCommunity": "Help the community by indicating the corresponding chapter.",
+    "previousCheckpoints": "Previous checkpoints",
+    "noHistory": "No history yet",
+    "importantNote": "Important note",
+    "notFound": "Anime not found",
+    "notFoundDescription": "This anime doesn't exist or the slug is incorrect."
+  },
+  "contribution": {
+    "addCheckpoint": "Add checkpoint",
+    "indicateChapter": "Indicate chapter",
+    "missing": "Missing?",
+    "newCheckpoint": "New checkpoint",
+    "contentType": "Content type",
+    "seasonNumber": "Season number",
+    "seasonPlaceholder": "e.g., 2",
+    "arcName": "Arc name",
+    "arcPlaceholder": "e.g., Marineford, Wano...",
+    "lastEpisode": "Last episode",
+    "lastEpisodeEquivalent": "Last episode (equivalent)",
+    "episodePlaceholder": "e.g., 12",
+    "episodePlaceholderOptional": "e.g., 45 (optional)",
+    "canonContent": "Canon content",
+    "canonDescription": "Part of the main manga storyline",
+    "resumeAtChapter": "Resume at Chapter",
+    "chapterPlaceholder": "e.g., 138",
+    "volume": "Volume (optional)",
+    "volumePlaceholder": "e.g., 15",
+    "note": "Note (Optional)",
+    "notePlaceholder": "e.g., The movie covers this chapter...",
+    "submit": "Validate and Publish",
+    "submitting": "Submitting...",
+    "season": "Season",
+    "movie": "Movie",
+    "arc": "Arc",
+    "special": "OVA/Special",
+    "error": "Error: "
+  },
+  "votes": {
+    "loading": "Loading...",
+    "rateLimit": "Vote limit reached (10/hour)",
+    "cooldown": "Wait a few seconds...",
+    "captchaRequired": "Anti-spam validation required",
+    "error": "Error during vote",
+    "captchaTitle": "Anti-spam validation required",
+    "captchaDescription": "Please contact an administrator if you think this is an error."
+  },
+  "trending": {
+    "title": "Popular right now",
+    "hint": "Click to see where to resume the manga"
+  },
+  "labels": {
+    "episode": "Ep.",
+    "endSeason": "End of Season",
+    "resumePoint": "Resume point",
+    "endArc": "End of Arc",
+    "endOfArc": "End of arc",
+    "movie": "Movie",
+    "nonCanon": "Non-canon"
+  },
+  "meta": {
+    "defaultTitle": "MangaSwitcher - From Anime to Manga",
+    "defaultDescription": "Instantly find which manga chapter to continue after watching the anime.",
+    "animeTitle": "Which chapter does {title} anime resume?",
+    "animeDescription": "The {title} anime stops at {label}. Continue the manga at Chapter {chapter}.",
+    "animeNoCheckpoint": "Which chapter does {title} resume? - MangaSwitcher",
+    "animeNoCheckpointDescription": "Discover where to resume the {title} manga after the anime. Help the community by adding the missing chapter!",
+    "notFound": "Anime not found - MangaSwitcher"
+  }
+}

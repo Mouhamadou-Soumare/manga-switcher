@@ -3,6 +3,7 @@
 import { supabase } from "@/lib/supabaseClient";
 import { revalidatePath } from "next/cache";
 import type { CheckpointType } from "@/lib/types";
+import { getTranslations } from 'next-intl/server';
 
 // =====================================================
 // Helper Function: Generate Unique Slug
@@ -41,37 +42,39 @@ async function generateUniqueSlug(title: string, malId: number): Promise<string>
 // =====================================================
 // Creates a descriptive label based on checkpoint type
 // Handles different content types with appropriate formatting
+// Now supports internationalization
 // =====================================================
-function generateCheckpointLabel(data: {
+async function generateCheckpointLabel(data: {
   type: CheckpointType;
   season?: number;
   episode?: number;
   arcName?: string;
   isCanon: boolean;
-}): string {
+}): Promise<string> {
+  const t = await getTranslations('labels');
   const { type, season, episode, arcName, isCanon } = data;
-  const episodeInfo = episode ? ` (Ép. ${episode})` : '';
+  const episodeInfo = episode ? ` (${t('episode')} ${episode})` : '';
 
   switch (type) {
     case 'SEASON':
       return season
-        ? `Fin Saison ${season}${episodeInfo}`
-        : `Point de reprise${episodeInfo}`;
+        ? `${t('endSeason')} ${season}${episodeInfo}`
+        : `${t('resumePoint')}${episodeInfo}`;
 
     case 'ARC':
       return arcName
-        ? `Fin Arc ${arcName}${episodeInfo}`
-        : `Fin d'arc${episodeInfo}`;
+        ? `${t('endArc')} ${arcName}${episodeInfo}`
+        : `${t('endOfArc')}${episodeInfo}`;
 
     case 'MOVIE':
-      return `Film${!isCanon ? ' (Non-canon)' : ''}`;
+      return `${t('movie')}${!isCanon ? ` (${t('nonCanon')})` : ''}`;
 
     case 'OVA':
     case 'SPECIAL':
-      return `${type}${!isCanon ? ' (Non-canon)' : ''}`;
+      return `${type}${!isCanon ? ` (${t('nonCanon')})` : ''}`;
 
     default:
-      return 'Point de reprise';
+      return t('resumePoint');
   }
 }
 
@@ -91,7 +94,7 @@ export async function addCheckpoint(formData: FormData) {
   const note = formData.get("note") as string;
 
   // Generate label based on checkpoint type
-  const label = generateCheckpointLabel({
+  const label = await generateCheckpointLabel({
     type,
     season: season ?? undefined,
     episode: episode ?? undefined,

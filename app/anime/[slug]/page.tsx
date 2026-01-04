@@ -4,6 +4,7 @@ import { supabase } from "@/lib/supabaseClient";
 import ContributionForm from "@/components/ContributionForm";
 import VoteButtons from "@/components/VoteButtons";
 import type { Metadata } from "next";
+import { getTranslations, getLocale } from 'next-intl/server';
 
 async function getJikanAnime(id: string) {
   try {
@@ -78,11 +79,14 @@ async function findAnimeBySlug(slug: string) {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
+  const t = await getTranslations('meta');
+  const tAnime = await getTranslations('anime');
+  const locale = await getLocale();
 
   const result = await findAnimeBySlug(slug);
 
   if (!result) {
-    return { title: "Anime introuvable - MangaSwitcher" };
+    return { title: t('notFound') };
   }
 
   const supabaseData = result.data;
@@ -100,21 +104,57 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const animeImage = jikanAnime?.images?.jpg?.large_image_url || supabaseData.image;
 
   if (heroCheckpoint) {
+    const volumeInfo = heroCheckpoint.volume ? ` (${tAnime('volume')} ${heroCheckpoint.volume})` : "";
     return {
-      title: `À quel chapitre reprend l'anime ${animeTitle} ?`,
-      description: `L'anime ${animeTitle} s'arrête à la ${heroCheckpoint.label}. Reprends le manga au Chapitre ${heroCheckpoint.chapter} ${heroCheckpoint.volume ? `(Tome ${heroCheckpoint.volume})` : ""}.`,
+      title: t('animeTitle', { title: animeTitle }),
+      description: t('animeDescription', {
+        title: animeTitle,
+        label: heroCheckpoint.label,
+        chapter: heroCheckpoint.chapter
+      }) + volumeInfo,
       alternates: {
         canonical: `/anime/${slug}`,
       },
       openGraph: {
+        title: t('animeTitle', { title: animeTitle }),
+        description: t('animeDescription', {
+          title: animeTitle,
+          label: heroCheckpoint.label,
+          chapter: heroCheckpoint.chapter
+        }) + volumeInfo,
+        images: animeImage ? [animeImage] : [],
+        locale: locale,
+        type: 'website',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: t('animeTitle', { title: animeTitle }),
+        description: t('animeDescription', {
+          title: animeTitle,
+          label: heroCheckpoint.label,
+          chapter: heroCheckpoint.chapter
+        }) + volumeInfo,
         images: animeImage ? [animeImage] : [],
       },
     };
   } else {
     return {
-      title: `À quel chapitre reprend ${animeTitle} ? - MangaSwitcher`,
-      description: `Découvre où reprendre le manga ${animeTitle} après l'anime. Aide la communauté en ajoutant le chapitre manquant !`,
+      title: t('animeNoCheckpoint', { title: animeTitle }),
+      description: t('animeNoCheckpointDescription', { title: animeTitle }),
+      alternates: {
+        canonical: `/anime/${slug}`,
+      },
       openGraph: {
+        title: t('animeNoCheckpoint', { title: animeTitle }),
+        description: t('animeNoCheckpointDescription', { title: animeTitle }),
+        images: animeImage ? [animeImage] : [],
+        locale: locale,
+        type: 'website',
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: t('animeNoCheckpoint', { title: animeTitle }),
+        description: t('animeNoCheckpointDescription', { title: animeTitle }),
         images: animeImage ? [animeImage] : [],
       },
     };
@@ -133,6 +173,7 @@ export default async function AnimePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+  const t = await getTranslations('anime');
 
   // Try to find anime (Supabase first, then Jikan)
   const result = await findAnimeBySlug(slug);
@@ -140,10 +181,10 @@ export default async function AnimePage({
   if (!result) {
     return (
       <div className="max-w-md mx-auto p-10 text-center">
-        <h1 className="text-2xl font-bold text-slate-900 mb-4">Anime introuvable</h1>
-        <p className="text-slate-600 mb-6">Cet anime n'existe pas ou le slug est incorrect.</p>
+        <h1 className="text-2xl font-bold text-slate-900 mb-4">{t('notFound')}</h1>
+        <p className="text-slate-600 mb-6">{t('notFoundDescription')}</p>
         <Link href="/" className="text-primary hover:underline">
-          Retour à la recherche
+          {t('backToSearch')}
         </Link>
       </div>
     );
@@ -204,7 +245,7 @@ export default async function AnimePage({
           {animeTitle}
         </h1>
         <span className={`inline-block px-4 py-1.5 rounded-full text-xs font-bold text-white tracking-wide shadow-sm ${animeStatus === 'Finished Airing' ? 'bg-primary' : 'bg-primary'}`}>
-          {animeStatus === 'Finished Airing' ? 'Terminé' : 'En cours'}
+          {animeStatus === 'Finished Airing' ? t('finished') : t('ongoing')}
         </span>
       </div>
 
@@ -233,10 +274,10 @@ export default async function AnimePage({
 
               <div className="mb-4">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-700 mb-2 font-mono">
-                  Reprends au
+                  {t('resumeAt')}
                 </h2>
                 <span className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-primary tracking-tighter drop-shadow-sm">
-                   Chapitre {heroCheckpoint.chapter}
+                   {t('chapter')} {heroCheckpoint.chapter}
                 </span>
 
                 <div className="w-24 h-1 bg-slate-100 mx-auto mt-8 rounded-full"></div>
@@ -248,22 +289,22 @@ export default async function AnimePage({
                     heroCheckpoint.type === 'ARC' ? 'bg-green-100 text-green-700' :
                     'bg-orange-100 text-orange-700'
                   }`}>
-                    {heroCheckpoint.type === 'SEASON' ? 'Saison' :
-                     heroCheckpoint.type === 'MOVIE' ? 'Film' :
-                     heroCheckpoint.type === 'ARC' ? 'Arc' :
+                    {heroCheckpoint.type === 'SEASON' ? t('season') :
+                     heroCheckpoint.type === 'MOVIE' ? t('movie') :
+                     heroCheckpoint.type === 'ARC' ? t('arc') :
                      heroCheckpoint.type}
                   </span>
 
                   {!heroCheckpoint.is_canon && (
                     <span className="text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full bg-amber-100 text-amber-700">
-                      Non-canon
+                      {t('nonCanon')}
                     </span>
                   )}
                 </div>
 
                 {heroCheckpoint.volume && (
                   <p className="text-sm text-slate-400 mt-4 font-medium">
-                    Tome {heroCheckpoint.volume}
+                    {t('volume')} {heroCheckpoint.volume}
                   </p>
                 )}
 
@@ -280,10 +321,10 @@ export default async function AnimePage({
             <>
               <div className="space-y-2 mb-8 max-w-xs">
                 <h3 className="text-lg font-bold text-slate-800">
-                  Pas encore de données
+                  {t('noDataYet')}
                 </h3>
                 <p className="text-sm text-slate-500 leading-relaxed">
-                  Aide la communauté en indiquant le chapitre correspondant.
+                  {t('helpCommunity')}
                 </p>
               </div>
 
@@ -305,7 +346,7 @@ export default async function AnimePage({
 
            <div className="flex items-center justify-between px-2 pt-2">
              <h3 className="text-[11px] font-bold text-slate-400 uppercase tracking-[0.15em]">
-               Points d'arrêt précédents
+               {t('previousCheckpoints')}
              </h3>
              <ContributionForm
                 malId={supabaseData.mal_id}
@@ -326,15 +367,15 @@ export default async function AnimePage({
                         point.type === 'ARC' ? 'bg-green-100 text-green-700' :
                         'bg-orange-100 text-orange-700'
                       }`}>
-                        {point.type === 'SEASON' ? 'Saison' :
-                         point.type === 'MOVIE' ? 'Film' :
-                         point.type === 'ARC' ? 'Arc' :
+                        {point.type === 'SEASON' ? t('season') :
+                         point.type === 'MOVIE' ? t('movie') :
+                         point.type === 'ARC' ? t('arc') :
                          point.type}
                       </span>
 
                       {!point.is_canon && (
                         <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-amber-100 text-amber-700">
-                          Non-canon
+                          {t('nonCanon')}
                         </span>
                       )}
                     </div>
@@ -345,7 +386,7 @@ export default async function AnimePage({
 
                     {point.volume && (
                       <p className="text-xs text-slate-500 mt-1">
-                        Tome {point.volume}
+                        {t('volume')} {point.volume}
                       </p>
                     )}
 
@@ -360,7 +401,7 @@ export default async function AnimePage({
 
                  <div className="flex items-center gap-3 ml-4">
                    <div className="text-right">
-                      <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">Chapitre</span>
+                      <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">{t('chapter')}</span>
                       <span className="text-primary font-black text-xl">{point.chapter}</span>
                    </div>
                    <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
@@ -370,7 +411,7 @@ export default async function AnimePage({
 
              {historyCheckpoints.length === 0 && (
                <div className="text-center py-6 border-2 border-dashed border-slate-100 rounded-2xl">
-                 <p className="text-xs text-slate-400">Aucun historique pour l'instant</p>
+                 <p className="text-xs text-slate-400">{t('noHistory')}</p>
                </div>
              )}
            </div>
@@ -379,7 +420,7 @@ export default async function AnimePage({
              <div className="mt-6 bg-amber-50 p-5 rounded-2xl border border-amber-100 flex gap-4 items-start shadow-sm">
                <Info className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" />
                <p className="text-sm text-amber-900 leading-relaxed">
-                 <span className="font-bold block mb-1 text-amber-700">Note importante</span>
+                 <span className="font-bold block mb-1 text-amber-700">{t('importantNote')}</span>
                  {heroCheckpoint.note}
                </p>
              </div>

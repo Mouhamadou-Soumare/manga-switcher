@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Search, Loader2, X } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 
 interface AnimeResult {
   mal_id: number;
@@ -27,6 +28,8 @@ function generateSlug(title: string): string {
 }
 
 export default function SearchAnime() {
+  const t = useTranslations('home');
+  const tSearch = useTranslations('search');
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<AnimeResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -104,7 +107,7 @@ export default function SearchAnime() {
                 ? 'border-primary/40 shadow-2xl shadow-primary/20 scale-[1.02]'
                 : 'border-gray-100 hover:border-gray-200'
             }`}
-            placeholder="Chercher un anime (ex: One Piece)"
+            placeholder={t('searchPlaceholder')}
           />
 
           {/* Clear Button with counter */}
@@ -126,7 +129,7 @@ export default function SearchAnime() {
                     setShowResults(false);
                   }}
                   className="p-1.5 hover:bg-gray-100 rounded-full transition-colors group/clear"
-                  aria-label="Clear search"
+                  aria-label={tSearch('clear')}
                 >
                   <X className="h-5 w-5 text-gray-400 group-hover/clear:text-gray-700 transition-colors" />
                 </button>
@@ -192,9 +195,9 @@ export default function SearchAnime() {
       {showResults && results.length === 0 && query.length > 2 && !isLoading && (
         <div className="absolute top-full left-0 right-0 mt-3 bg-white rounded-3xl shadow-xl p-8 z-50 border border-gray-100 text-center animate-in fade-in duration-300">
           <div className="text-6xl mb-4">🔍</div>
-          <h3 className="font-bold text-slate-800 mb-2">Aucun résultat trouvé</h3>
+          <h3 className="font-bold text-slate-800 mb-2">{tSearch('noResults')}</h3>
           <p className="text-sm text-slate-500">
-            Essayez avec un autre titre ou vérifiez l'orthographe
+            {tSearch('noResultsDescription')}
           </p>
         </div>
       )}
