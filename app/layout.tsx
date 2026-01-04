@@ -65,6 +65,10 @@ export async function generateMetadata(): Promise<Metadata> {
       ],
     },
     manifest: '/site.webmanifest',
+
+    verification: {
+      google: 'eYPs1Tpfe4AfAQMDQppsdkFMb1ercM-14FmrgNcUP8o',
+    },
   };
 }
 
