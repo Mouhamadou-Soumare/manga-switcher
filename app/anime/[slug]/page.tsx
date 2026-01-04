@@ -35,6 +35,17 @@ async function getSupabaseAnimeBySlug(slug: string) {
     if (freshCheckpoints) {
       anime.checkpoints = freshCheckpoints;
     }
+
+    // NOUVEAU: Récupérer les Golden Data (métadonnées vérifiées) si elles existent
+    const { data: metadata } = await supabase
+      .from('series_metadata')
+      .select('*')
+      .eq('anime_id', anime.id)
+      .maybeSingle();
+
+    if (metadata) {
+      anime.golden_data = metadata;
+    }
   }
 
   return anime;
@@ -202,8 +213,33 @@ export default async function AnimePage({
   const animeStatus = jikanAnime?.status || 'Unknown';
 
   let allCheckpoints = supabaseData?.checkpoints || [];
+  const goldenData = supabaseData?.golden_data;
+
+  // Si Golden Data existe, créer un checkpoint synthétique enrichi et l'ajouter en PREMIER
+  if (goldenData?.manga_continuation) {
+    const goldenCheckpoint = {
+      id: 'golden-data-checkpoint',
+      chapter: goldenData.manga_continuation.chapter,
+      volume: goldenData.manga_continuation.volume,
+      label: goldenData.last_anime?.event || 'Fin Saison 2 (Ép. 47)',
+      type: 'SEASON',
+      is_canon: true,
+      upvotes: 999999, // Score très élevé pour être toujours en premier après tri
+      downvotes: 0,
+      note: goldenData.manga_continuation.note,
+      isGoldenData: true,
+      tags: goldenData.tags,
+    };
+
+    // Ajouter le golden checkpoint au début
+    allCheckpoints = [goldenCheckpoint, ...allCheckpoints];
+  }
 
   allCheckpoints.sort((a: any, b: any) => {
+    // 0. Golden Data TOUJOURS en premier
+    if (a.isGoldenData && !b.isGoldenData) return -1;
+    if (!a.isGoldenData && b.isGoldenData) return 1;
+
     // 1. Canon content before non-canon
     if (a.is_canon !== b.is_canon) {
       return a.is_canon ? -1 : 1;
@@ -266,9 +302,16 @@ export default async function AnimePage({
           {heroCheckpoint ? (
             <>
               <div className="space-y-2 mb-8">
-                <p className="text-xs font-bold tracking-[0.2em] text-slate-400 uppercase">
-                  {heroCheckpoint.label}
-                </p>
+                <div className="flex items-center justify-center gap-2">
+                  <p className="text-xs font-bold tracking-[0.2em] text-slate-400 uppercase">
+                    {heroCheckpoint.label}
+                  </p>
+                  {heroCheckpoint.isGoldenData && (
+                    <span className="text-[9px] font-bold tracking-wider px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                      ✓ VÉRIFIÉ
+                    </span>
+                  )}
+                </div>
                 <div className="w-6 h-0.5 bg-slate-200 mx-auto rounded-full"></div>
               </div>
 
@@ -281,6 +324,17 @@ export default async function AnimePage({
                 </span>
 
                 <div className="w-24 h-1 bg-slate-100 mx-auto mt-8 rounded-full"></div>
+
+                {/* Tags Golden Data */}
+                {heroCheckpoint.isGoldenData && heroCheckpoint.tags && heroCheckpoint.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-2 justify-center mt-6">
+                    {heroCheckpoint.tags.map((tag: string) => (
+                      <span key={tag} className="px-2.5 py-1 bg-slate-100 text-slate-600 rounded-full text-[10px] font-medium">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 <div className="flex flex-wrap justify-center gap-2 mt-6">
                   <span className={`text-[10px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-full ${
@@ -308,13 +362,15 @@ export default async function AnimePage({
                   </p>
                 )}
 
-                <div className="mt-6 flex justify-center">
-                  <VoteButtons
-                    checkpointId={heroCheckpoint.id}
-                    initialUpvotes={heroCheckpoint.upvotes || 0}
-                    initialDownvotes={heroCheckpoint.downvotes || 0}
-                  />
-                </div>
+                {!heroCheckpoint.isGoldenData && (
+                  <div className="mt-6 flex justify-center">
+                    <VoteButtons
+                      checkpointId={heroCheckpoint.id}
+                      initialUpvotes={heroCheckpoint.upvotes || 0}
+                      initialDownvotes={heroCheckpoint.downvotes || 0}
+                    />
+                  </div>
+                )}
               </div>
             </>
           ) : (

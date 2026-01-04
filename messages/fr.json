@@ -25,10 +25,14 @@
     "noDataYet": "Pas encore de données",
     "helpCommunity": "Aide la communauté en indiquant le chapitre correspondant.",
     "previousCheckpoints": "Points d'arrêt précédents",
+    "communityAlternatives": "👥 Alternatives de la communauté",
     "noHistory": "Aucun historique pour l'instant",
     "importantNote": "Note importante",
     "notFound": "Anime introuvable",
-    "notFoundDescription": "Cet anime n'existe pas ou le slug est incorrect."
+    "notFoundDescription": "Cet anime n'existe pas ou le slug est incorrect.",
+    "officialVerified": "Données Officielles Vérifiées",
+    "lastAnime": "Dernier anime",
+    "mangaBehindAnime": "Le manga est en retard sur l'anime"
   },
   "contribution": {
     "addCheckpoint": "Ajouter un point d'arrêt",

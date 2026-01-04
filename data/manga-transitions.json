@@ -1,0 +1,1974 @@
+{
+  "schema_version": "1.0.0",
+  "last_updated": "2026-01-04T00:00:00Z",
+  "total_series": 95,
+  "series": [
+    {
+      "series_id": "one-piece",
+      "title_en": "One Piece",
+      "title_jp": "ワンピース",
+      "title_fr": "One Piece",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Episode 1101 - Arc Egghead",
+        "episode": 1101,
+        "arc": "Egghead",
+        "air_date": "2024-12-15"
+      },
+      "manga_continuation": {
+        "chapter": 1070,
+        "note": "L'anime adapte environ 0.8 chapitre par épisode. Vérifiez le titre de l'épisode pour le chapitre exact."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Où reprendre le manga One Piece après l'anime ? Commencez au chapitre 1070 après l'épisode 1101 de l'arc Egghead.",
+        "keywords": ["one piece manga", "one piece chapitre", "arc egghead manga"],
+        "alternate_titles": ["OP", "ワンピース"]
+      },
+      "tags": ["shonen", "action", "adventure", "pirates"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "jujutsu-kaisen",
+      "title_en": "Jujutsu Kaisen",
+      "title_jp": "呪術廻戦",
+      "title_fr": "Jujutsu Kaisen",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Fin de Saison 2 - Arc Incident de Shibuya",
+        "season": 2,
+        "arc": "Shibuya Incident",
+        "air_date": "2023-12-28"
+      },
+      "manga_continuation": {
+        "chapter": 138,
+        "note": "La saison 2 se termine avec la déclaration de Yuta. Le chapitre 138 marque le début de l'arc du Clan Zenin."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Le manga est terminé (Chapitre 271). Vous pouvez lire jusqu'à la fin.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Jujutsu Kaisen après la saison 2 ? Commencez au chapitre 138 pour l'arc du Clan Zenin et la Traque Meurtrière.",
+        "keywords": ["jujutsu kaisen manga", "jjk chapitre 138", "après shibuya"],
+        "alternate_titles": ["JJK", "呪術廻戦"]
+      },
+      "tags": ["shonen", "action", "supernatural", "dark"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "demon-slayer",
+      "title_en": "Demon Slayer: Kimetsu no Yaiba",
+      "title_jp": "鬼滅の刃",
+      "title_fr": "Demon Slayer",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Fin de Saison 4 - Arc Entraînement des Piliers",
+        "season": 4,
+        "arc": "Hashira Training Arc",
+        "air_date": "2024-06-30"
+      },
+      "manga_continuation": {
+        "chapter": 140,
+        "note": "La saison 4 se termine au moment où Muzan attaque et où les Piliers tombent dans la Forteresse Infinie. Le chapitre 140 lance l'arc de la Bataille Finale."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Une trilogie de films est annoncée pour adapter la suite. Le manga est terminé (Chapitre 205).",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Où reprendre Demon Slayer après la saison 4 ? Chapitre 140 pour l'arc de la Bataille Finale dans la Forteresse Infinie.",
+        "keywords": ["demon slayer manga", "kimetsu no yaiba chapitre", "forteresse infinie"],
+        "alternate_titles": ["Kimetsu no Yaiba", "鬼滅の刃", "KnY"]
+      },
+      "tags": ["shonen", "action", "supernatural", "demons"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "my-hero-academia",
+      "title_en": "My Hero Academia",
+      "title_jp": "僕のヒーローアカデミア",
+      "title_fr": "My Hero Academia",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Fin de Saison 7",
+        "season": 7,
+        "arc": "Final War Arc",
+        "air_date": "2024-10-12"
+      },
+      "manga_continuation": {
+        "chapter": 399,
+        "volume": 40,
+        "note": "La saison 7 couvre la guerre finale incluant le combat Star and Stripe. Reprendre au chapitre 399 est sûr."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Le manga s'est conclu au chapitre 430.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer My Hero Academia après la saison 7 ? Commencez au chapitre 399 (Volume 40) pour voir la suite de la guerre finale.",
+        "keywords": ["my hero academia manga", "boku no hero chapitre", "mha saison 7"],
+        "alternate_titles": ["MHA", "Boku no Hero Academia", "僕のヒーローアカデミア"]
+      },
+      "tags": ["shonen", "action", "superhero", "school"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "chainsaw-man",
+      "title_en": "Chainsaw Man",
+      "title_jp": "チェンソーマン",
+      "title_fr": "Chainsaw Man",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Katana Man Arc",
+        "air_date": "2022-12-27"
+      },
+      "manga_continuation": {
+        "chapter": 39,
+        "note": "La saison 1 se termine après l'arc Katana Man. L'arc suivant (Reze/Bomb Girl) sera adapté en film."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Si vous ne voulez pas attendre le film Reze Arc, commencez au chapitre 39.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Chainsaw Man après la saison 1 ? Chapitre 39 pour l'arc Reze (Bomb Girl) qui sera adapté en film.",
+        "keywords": ["chainsaw man manga", "csm chapitre 39", "arc reze"],
+        "alternate_titles": ["CSM", "チェンソーマン"]
+      },
+      "tags": ["shonen", "action", "dark", "supernatural"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "bleach",
+      "title_en": "Bleach: Thousand-Year Blood War",
+      "title_jp": "ブリーチ 千年血戦篇",
+      "title_fr": "Bleach",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "TYBW Partie 2 - The Separation",
+        "arc": "Thousand-Year Blood War",
+        "air_date": "2023-09-30"
+      },
+      "manga_continuation": {
+        "chapter": 609,
+        "note": "La Partie 2 se termine avec le combat Yhwach vs Ichibei. IMPORTANT: L'anime ajoute du contenu canonique supervisé par Kubo absent du manga."
+      },
+      "status": "completed",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ CONTENU EXCLUSIF: L'anime Bleach TYBW contient des scènes canoniques inédites supervisées par Tite Kubo (ex: Bankai de Senjumaru) qui ne sont PAS dans le manga. La lecture du manga peut sembler incomplète sur certains aspects.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Bleach TYBW après la Partie 2 ? Chapitre 609, mais attention : l'anime contient du contenu canonique exclusif.",
+        "keywords": ["bleach manga", "tybw chapitre", "thousand year blood war"],
+        "alternate_titles": ["TYBW", "ブリーチ"]
+      },
+      "tags": ["shonen", "action", "supernatural", "shinigami"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "hunter-x-hunter",
+      "title_en": "Hunter x Hunter",
+      "title_jp": "ハンター×ハンター",
+      "title_fr": "Hunter x Hunter",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Episode 148 - Fin de l'anime (2011)",
+        "episode": 148,
+        "arc": "13th Hunter Chairman Election",
+        "air_date": "2014-09-23"
+      },
+      "manga_continuation": {
+        "chapter": 339,
+        "note": "L'anime se conclut sur Gon rencontrant Ging. Le chapitre 339 montre cette scène. L'arc du Continent Caché commence au chapitre 340."
+      },
+      "status": "hiatus",
+      "transition_type": "direct",
+      "warning_flag": true,
+      "warning_message": "⚠️ HIATUS FRÉQUENTS: Togashi prend de longues pauses. Le manga progresse lentement depuis 2014.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Hunter x Hunter après l'épisode 148 ? Chapitre 340 pour l'arc du Continent Caché. Attention aux hiatus.",
+        "keywords": ["hunter x hunter manga", "hxh chapitre 340", "continent caché"],
+        "alternate_titles": ["HxH", "ハンター×ハンター"]
+      },
+      "tags": ["shonen", "action", "adventure", "complex"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "black-clover",
+      "title_en": "Black Clover",
+      "title_jp": "ブラッククローバー",
+      "title_fr": "Black Clover",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Episode 170 - Fin de l'anime TV",
+        "episode": 170,
+        "arc": "Heart Kingdom",
+        "air_date": "2021-03-30"
+      },
+      "manga_continuation": {
+        "chapter": 270,
+        "note": "L'anime s'est arrêté avant le raid sur le Royaume de Spade. Le film 'Sword of the Wizard King' est une histoire originale non-canon."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Où reprendre Black Clover après l'épisode 170 ? Chapitre 270 pour le raid sur le Royaume de Spade.",
+        "keywords": ["black clover manga", "bc chapitre 270", "royaume de spade"],
+        "alternate_titles": ["BC", "ブラッククローバー"]
+      },
+      "tags": ["shonen", "action", "magic", "fantasy"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "dr-stone",
+      "title_en": "Dr. Stone",
+      "title_jp": "ドクターストーン",
+      "title_fr": "Dr. Stone",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "New World - Partie 2 (Saison 3)",
+        "season": 3,
+        "arc": "Treasure Island",
+        "air_date": "2023-12-21"
+      },
+      "manga_continuation": {
+        "chapter": 142,
+        "volume": 16,
+        "note": "La saison 3 couvre l'arc de l'Île au Trésor et se termine à la fin du volume 16. Le chapitre 143 lance l'arc de la Ville du Maïs."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Dr. Stone après New World ? Chapitre 143 pour l'arc de la Ville du Maïs et le voyage vers l'Amérique.",
+        "keywords": ["dr stone manga", "dr stone chapitre 143", "new world"],
+        "alternate_titles": ["ドクターストーン"]
+      },
+      "tags": ["shonen", "science", "adventure", "post-apocalyptic"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "dragon-ball-super",
+      "title_en": "Dragon Ball Super",
+      "title_jp": "ドラゴンボール超",
+      "title_fr": "Dragon Ball Super",
+      "source_material": "manga",
+      "priority": "P0",
+      "last_anime": {
+        "event": "Episode 131 - Fin du Tournoi du Pouvoir",
+        "episode": 131,
+        "arc": "Tournament of Power",
+        "air_date": "2018-03-25"
+      },
+      "manga_continuation": {
+        "chapter": 42,
+        "note": "L'anime et le manga ont divergé dans l'exécution du Tournoi du Pouvoir. Le chapitre 42 lance l'arc du Prisonnier Galactique (Moro) qui n'a jamais été animé."
+      },
+      "status": "ongoing",
+      "transition_type": "divergent",
+      "warning_flag": true,
+      "warning_message": "⚠️ DIVERGENCE: L'anime et le manga ont des différences dans le Tournoi du Pouvoir. Le manga continue avec de nouveaux arcs non animés.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Dragon Ball Super après l'épisode 131 ? Chapitre 42 pour l'arc Moro (Prisonnier Galactique) jamais animé.",
+        "keywords": ["dragon ball super manga", "dbs chapitre 42", "arc moro"],
+        "alternate_titles": ["DBS", "ドラゴンボール超"]
+      },
+      "tags": ["shonen", "action", "martial arts", "adventure"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "frieren",
+      "title_en": "Frieren: Beyond Journey's End",
+      "title_jp": "葬送のフリーレン",
+      "title_fr": "Frieren",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1 (28 épisodes)",
+        "season": 1,
+        "episode": 28,
+        "arc": "First-Class Mage Exam",
+        "air_date": "2024-03-22"
+      },
+      "manga_continuation": {
+        "chapter": 61,
+        "note": "L'anime est une adaptation extrêmement fidèle. L'épisode 28 correspond à la fin du chapitre 60. Le chapitre 61 entame la suite du voyage vers le nord."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Frieren après la saison 1 ? Chapitre 61 pour la suite du voyage après l'examen de Mage de Première Classe.",
+        "keywords": ["frieren manga", "sousou no frieren chapitre", "beyond journey's end"],
+        "alternate_titles": ["Sousou no Frieren", "葬送のフリーレン"]
+      },
+      "tags": ["seinen", "fantasy", "adventure", "slice of life"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "oshi-no-ko",
+      "title_en": "Oshi no Ko",
+      "title_jp": "推しの子",
+      "title_fr": "Oshi no Ko",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Tokyo Blade Arc",
+        "air_date": "2024-10-02"
+      },
+      "manga_continuation": {
+        "chapter": 81,
+        "note": "La saison 2 couvre l'arc de la pièce Tokyo Blade et se termine sur les chapitres 79-80 (arc Private). Le chapitre 81 démarre l'arc Main Story."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Oshi no Ko après la saison 2 ? Chapitre 81 pour l'arc Main Story après Tokyo Blade.",
+        "keywords": ["oshi no ko manga", "推しの子 chapitre", "saison 2"],
+        "alternate_titles": ["推しの子", "My Star"]
+      },
+      "tags": ["seinen", "drama", "entertainment industry", "psychological"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "spy-x-family",
+      "title_en": "Spy x Family",
+      "title_jp": "スパイファミリー",
+      "title_fr": "Spy x Family",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Cruise Adventure Arc",
+        "air_date": "2023-12-23"
+      },
+      "manga_continuation": {
+        "chapter": 60,
+        "volume": 9,
+        "note": "La saison 2 couvre l'arc de l'aventure en croisière et se termine au volume 9. Le chapitre 60 est le point de reprise."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Spy x Family après la saison 2 ? Chapitre 60 après l'arc de la croisière pour découvrir la suite.",
+        "keywords": ["spy x family manga", "spyfamily chapitre 60", "saison 2"],
+        "alternate_titles": ["SpyFam", "スパイファミリー"]
+      },
+      "tags": ["shonen", "comedy", "action", "family"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "blue-lock",
+      "title_en": "Blue Lock",
+      "title_jp": "ブルーロック",
+      "title_fr": "Blue Lock",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1 (24 épisodes)",
+        "season": 1,
+        "episode": 24,
+        "arc": "Second Selection",
+        "air_date": "2023-03-25"
+      },
+      "manga_continuation": {
+        "chapter": 94,
+        "note": "La saison 1 couvre jusqu'à la fin de la seconde sélection. Le chapitre 94 marque le début de la sélection pour le match contre l'équipe U-20 du Japon."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Blue Lock après la saison 1 ? Chapitre 94 pour la sélection du match U-20 et la suite du projet Blue Lock.",
+        "keywords": ["blue lock manga", "blue lock chapitre 94", "u-20"],
+        "alternate_titles": ["ブルーロック"]
+      },
+      "tags": ["shonen", "sports", "soccer", "psychological"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "shangri-la-frontier",
+      "title_en": "Shangri-La Frontier",
+      "title_jp": "シャングリラ・フロンティア",
+      "title_fr": "Shangri-La Frontier",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1 (25 épisodes)",
+        "season": 1,
+        "episode": 25,
+        "arc": "Wethermon the Tombguard",
+        "air_date": "2024-03-31"
+      },
+      "manga_continuation": {
+        "chapter": 59,
+        "note": "La saison 1 couvre l'arc de Wethermon le Gardien du Tombeau et se termine au chapitre 58. Le chapitre 59 débute le prochain arc."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Shangri-La Frontier après la saison 1 ? Chapitre 59 après la bataille contre Wethermon.",
+        "keywords": ["shangri-la frontier manga", "slf chapitre", "vrmmo"],
+        "alternate_titles": ["SLF", "シャングリラ・フロンティア"]
+      },
+      "tags": ["shonen", "action", "gaming", "vrmmo"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "solo-leveling",
+      "title_en": "Solo Leveling",
+      "title_jp": "俺だけレベルアップな件",
+      "title_fr": "Solo Leveling",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Job Change Arc",
+        "air_date": "2024-03-30"
+      },
+      "manga_continuation": {
+        "chapter": 46,
+        "note": "L'anime adapte le manhwa jusqu'à l'arc du changement de classe (combat contre Igris). Le chapitre 45 conclut cet arc. Le chapitre 46 commence l'arc de la Porte Rouge."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Solo Leveling après la saison 1 ? Chapitre 46 (manhwa) pour l'arc de la Porte Rouge et la suite de Sung Jinwoo.",
+        "keywords": ["solo leveling manga", "solo leveling chapitre 46", "manhwa"],
+        "alternate_titles": ["나 혼자만 레벨업", "Ore dake Level Up"]
+      },
+      "tags": ["action", "fantasy", "manhwa", "leveling"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "mashle",
+      "title_en": "Mashle: Magic and Muscles",
+      "title_jp": "マッシュル-MASHLE-",
+      "title_fr": "Mashle",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Divine Visionary Exam",
+        "air_date": "2024-09-28"
+      },
+      "manga_continuation": {
+        "chapter": 75,
+        "note": "La saison 2 couvre l'examen de Visionnaire Divin et s'arrête juste avant l'arc de l'invasion finale. Le manga est terminé (162 chapitres)."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Le manga est terminé, facile à compléter depuis le chapitre 75.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Mashle après la saison 2 ? Chapitre 75 pour l'arc final. Le manga est terminé au chapitre 162.",
+        "keywords": ["mashle manga", "magic and muscles chapitre", "saison 2"],
+        "alternate_titles": ["マッシュル", "MASHLE"]
+      },
+      "tags": ["shonen", "comedy", "action", "magic", "parody"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "the-dangers-in-my-heart",
+      "title_en": "The Dangers in My Heart",
+      "title_jp": "僕の心のヤバイやつ",
+      "title_fr": "Mon cœur a ses raisons",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "School Trip Arc",
+        "air_date": "2024-09-29"
+      },
+      "manga_continuation": {
+        "chapter": 114,
+        "note": "La saison 2 se termine sur le voyage scolaire et la confession (chapitre 113). La suite commence au chapitre 114."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre The Dangers in My Heart après la saison 2 ? Chapitre 114 après la confession et le voyage scolaire.",
+        "keywords": ["boku no kokoro manga", "dangers in my heart chapitre", "bokuyaba"],
+        "alternate_titles": ["Boku no Kokoro no Yabai Yatsu", "BokuYaba", "僕の心のヤバイやつ"]
+      },
+      "tags": ["shounen", "romance", "comedy", "school"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "wind-breaker",
+      "title_en": "Wind Breaker",
+      "title_jp": "ウィンドブレーカー",
+      "title_fr": "Wind Breaker",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Shishitoren Battle",
+        "air_date": "2024-06-28"
+      },
+      "manga_continuation": {
+        "chapter": 42,
+        "volume": 6,
+        "note": "La saison 1 couvre la bataille contre Shishitoren et se termine au volume 5. Le volume 6 (chapitre 42) est le point de départ."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Wind Breaker après la saison 1 ? Chapitre 42 (Volume 6) après la bataille Shishitoren.",
+        "keywords": ["wind breaker manga", "wind breaker chapitre 42", "bofurin"],
+        "alternate_titles": ["ウィンドブレーカー", "WB"]
+      },
+      "tags": ["shonen", "action", "delinquents", "school"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "kaiju-no-8",
+      "title_en": "Kaiju No. 8",
+      "title_jp": "怪獣8号",
+      "title_fr": "Kaiju No. 8",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Kafka's Identity Revealed",
+        "air_date": "2024-06-29"
+      },
+      "manga_continuation": {
+        "chapter": 39,
+        "note": "La saison 1 se termine après que Kafka soit capturé et son identité révélée. Le chapitre 39 traite des conséquences et introduit le Commandant Narumi."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Kaiju No. 8 après la saison 1 ? Chapitre 39 après la révélation de l'identité de Kafka.",
+        "keywords": ["kaiju no 8 manga", "kaiju 8 chapitre", "monster 8"],
+        "alternate_titles": ["Monster #8", "怪獣8号", "Kaiju 8-gou"]
+      },
+      "tags": ["shonen", "action", "sci-fi", "kaiju"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "zom-100",
+      "title_en": "Zom 100: Bucket List of the Dead",
+      "title_jp": "ゾン100~ゾンビになるまでにしたい100のこと~",
+      "title_fr": "Zom 100",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Hometown Arc",
+        "air_date": "2023-12-25"
+      },
+      "manga_continuation": {
+        "chapter": 23,
+        "volume": 7,
+        "note": "L'anime se termine après l'arc du village natal d'Akira (Volume 6). Le chapitre 23 (Volume 7) débute de nouvelles aventures."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Zom 100 après la saison 1 ? Chapitre 23 (Volume 7) pour de nouvelles aventures après l'arc du village natal.",
+        "keywords": ["zom 100 manga", "bucket list of the dead chapitre", "zombie"],
+        "alternate_titles": ["Zombie 100", "ゾン100"]
+      },
+      "tags": ["seinen", "comedy", "horror", "zombie"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "hells-paradise",
+      "title_en": "Hell's Paradise: Jigokuraku",
+      "title_jp": "地獄楽",
+      "title_fr": "Hell's Paradise",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Lord Tensen Arc (Mid)",
+        "air_date": "2023-07-01"
+      },
+      "manga_continuation": {
+        "chapter": 45,
+        "note": "La saison 1 s'arrête au milieu de l'arc Lord Tensen avec une coupure abrupte. Reprendre au chapitre 45 permet de suivre le combat en cours."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Le manga est terminé (127 chapitres).",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Hell's Paradise après la saison 1 ? Chapitre 45 pour continuer l'arc Lord Tensen. Manga terminé.",
+        "keywords": ["hell's paradise manga", "jigokuraku chapitre", "lord tensen"],
+        "alternate_titles": ["Jigokuraku", "地獄楽"]
+      },
+      "tags": ["seinen", "action", "dark fantasy", "supernatural"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "heavenly-delusion",
+      "title_en": "Heavenly Delusion",
+      "title_jp": "天国大魔境",
+      "title_fr": "Heavenly Delusion",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Dual Timeline Arc",
+        "air_date": "2023-07-01"
+      },
+      "manga_continuation": {
+        "chapter": 34,
+        "note": "L'anime entrelace deux timelines. L'histoire Maru/Kiruko s'arrête vers le chapitre 34, l'histoire de l'école va jusqu'au chapitre 38. Reprendre au chapitre 34 recommandé."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Heavenly Delusion après la saison 1 ? Chapitre 34 pour suivre la convergence des timelines de Maru et Kiruko.",
+        "keywords": ["heavenly delusion manga", "tengoku daimakyo chapitre", "timeline"],
+        "alternate_titles": ["Tengoku Daimakyo", "天国大魔境"]
+      },
+      "tags": ["seinen", "sci-fi", "mystery", "post-apocalyptic"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "skip-and-loafer",
+      "title_en": "Skip and Loafer",
+      "title_jp": "スキップとローファー",
+      "title_fr": "Skip and Loafer",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "First Year High School",
+        "air_date": "2023-06-27"
+      },
+      "manga_continuation": {
+        "chapter": 24,
+        "volume": 5,
+        "note": "L'anime adapte parfaitement les volumes 1 à 4. La suite directe se trouve dans le Volume 5, à partir du chapitre 24."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Skip and Loafer après la saison 1 ? Chapitre 24 (Volume 5) pour la suite de l'année scolaire de Mitsumi.",
+        "keywords": ["skip and loafer manga", "skip to loafer chapitre", "slice of life"],
+        "alternate_titles": ["スキップとローファー"]
+      },
+      "tags": ["shoujo", "slice of life", "school", "romance"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "100-kanojo",
+      "title_en": "The 100 Girlfriends Who Really, Really, Really, Really, Really Love You",
+      "title_jp": "君のことが大大大大大好きな100人の彼女",
+      "title_fr": "Les 100 Petites Amies",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "First Girlfriends Arc",
+        "air_date": "2023-12-24"
+      },
+      "manga_continuation": {
+        "chapter": 23,
+        "note": "La saison 1 introduit les premières petites amies jusqu'à l'arc de Hahari. Le chapitre 23 commence l'introduction de la prochaine petite amie (Kurumi)."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer 100 Kanojo après la saison 1 ? Chapitre 23 pour rencontrer la prochaine petite amie de Rentaro.",
+        "keywords": ["100 girlfriends manga", "100 kanojo chapitre", "harem"],
+        "alternate_titles": ["100 Kanojo", "Hyakkano", "君のことが大大大大大好きな100人の彼女"]
+      },
+      "tags": ["shounen", "comedy", "romance", "harem"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "undead-unluck",
+      "title_en": "Undead Unluck",
+      "title_jp": "アンデッドアンラック",
+      "title_fr": "Undead Unluck",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1 (24 épisodes)",
+        "season": 1,
+        "episode": 24,
+        "arc": "Autumn Arc",
+        "air_date": "2024-03-23"
+      },
+      "manga_continuation": {
+        "chapter": 53,
+        "note": "La saison 1 couvre jusqu'à la fin de l'arc Autumn. Le chapitre 53 entame l'arc Summer."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Undead Unluck après la saison 1 ? Chapitre 53 pour l'arc Summer et la quête des UMA.",
+        "keywords": ["undead unluck manga", "undead unluck chapitre 53", "arc summer"],
+        "alternate_titles": ["アンデッドアンラック", "UnLuck"]
+      },
+      "tags": ["shonen", "action", "supernatural", "romance"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "dungeon-meshi",
+      "title_en": "Delicious in Dungeon",
+      "title_jp": "ダンジョン飯",
+      "title_fr": "Gloutons & Dragons",
+      "source_material": "manga",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1 (24 épisodes)",
+        "season": 1,
+        "episode": 24,
+        "arc": "Red Dragon Arc",
+        "air_date": "2024-06-13"
+      },
+      "manga_continuation": {
+        "chapter": 53,
+        "note": "L'anime se termine après le combat contre le Dragon Rouge et les événements liés à Falin (approx. chapitre 52). Le chapitre 53 est le point de départ idéal."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Le manga est terminé (97 chapitres). Une saison 2 a été annoncée.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Dungeon Meshi après la saison 1 ? Chapitre 53 après le combat contre le Dragon Rouge et Falin.",
+        "keywords": ["dungeon meshi manga", "delicious in dungeon chapitre", "gloutons et dragons"],
+        "alternate_titles": ["Dungeon Meshi", "ダンジョン飯", "DunMeshi"]
+      },
+      "tags": ["seinen", "fantasy", "comedy", "cooking"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "kusuriya-no-hitorigoto",
+      "title_en": "The Apothecary Diaries",
+      "title_jp": "薬屋のひとりごと",
+      "title_fr": "Les Carnets de l'Apothicaire",
+      "source_material": "light_novel",
+      "priority": "P1",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Lakan Arc",
+        "air_date": "2024-03-24"
+      },
+      "light_novel_continuation": {
+        "volume": 3,
+        "note": "L'anime adapte principalement le Light Novel (fin du volume 2). Reprendre au volume 3 pour la suite."
+      },
+      "manga_continuation": {
+        "chapter": 41,
+        "note": "Le chapitre 41 du manga (version Nekokurage) correspond à la suite directe après l'arc de Lakan."
+      },
+      "manga_adaptation_info": {
+        "status": "up_to_date",
+        "last_chapter": 41
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "L'adaptation manga (Nekokurage) est très populée et fidèle. Vous pouvez lire le manga ou le LN.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Les Carnets de l'Apothicaire après la saison 1 ? Chapitre 41 (manga) ou Volume 3 (LN) après l'arc Lakan.",
+        "keywords": ["kusuriya no hitorigoto manga", "apothecary diaries chapitre", "light novel"],
+        "alternate_titles": ["Kusuriya no Hitorigoto", "薬屋のひとりごと", "Apothecary"]
+      },
+      "tags": ["historical", "mystery", "medical", "romance"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "mushoku-tensei",
+      "title_en": "Mushoku Tensei: Jobless Reincarnation",
+      "title_jp": "無職転生 ~異世界行ったら本気だす~",
+      "title_fr": "Mushoku Tensei",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 2 Partie 2",
+        "season": 2,
+        "arc": "School Arc",
+        "air_date": "2024-07-01"
+      },
+      "light_novel_continuation": {
+        "volume": 13,
+        "note": "La saison 2 adapte jusqu'au volume 12. Reprendre au volume 13 pour la suite de l'histoire de Rudeus."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga est actuellement aux volumes 10-11. Ne pas recommander le manga pour la suite immédiate. Lisez le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard sur l'anime. Pour continuer l'histoire, vous DEVEZ lire le Light Novel au Volume 13.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Mushoku Tensei après la saison 2 ? Volume 13 du Light Novel OBLIGATOIRE (le manga est en retard).",
+        "keywords": ["mushoku tensei light novel", "mushoku tensei volume 13", "jobless reincarnation"],
+        "alternate_titles": ["Jobless Reincarnation", "無職転生", "MT"]
+      },
+      "tags": ["isekai", "fantasy", "adventure", "drama"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "rezero",
+      "title_en": "Re:Zero - Starting Life in Another World",
+      "title_jp": "Re:ゼロから始める異世界生活",
+      "title_fr": "Re:Zero",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Sanctuary Arc",
+        "air_date": "2021-03-24"
+      },
+      "light_novel_continuation": {
+        "volume": 16,
+        "note": "La saison 2 adapte l'arc du Sanctuaire (Arc 4). Le volume 16 commence l'Arc 5 (Arc de la Ville de Priestella)."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga est très en retard sur l'anime. Recommander le Light Novel ou le Web Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard. Pour continuer, lisez le Light Novel Volume 16 (Arc 5) ou le Web Novel.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Re:Zero après la saison 2 ? Volume 16 du Light Novel pour l'Arc 5 (le manga est en retard).",
+        "keywords": ["rezero light novel", "rezero volume 16", "arc 5 priestella"],
+        "alternate_titles": ["Re:ゼロ", "ReZero", "Starting Life in Another World"]
+      },
+      "tags": ["isekai", "fantasy", "psychological", "time loop"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "overlord",
+      "title_en": "Overlord",
+      "title_jp": "オーバーロード",
+      "title_fr": "Overlord",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 4",
+        "season": 4,
+        "arc": "Dwarf Kingdom / Elf Kingdom",
+        "air_date": "2022-09-27"
+      },
+      "light_novel_continuation": {
+        "volume": 15,
+        "note": "La saison 4 a adapté les volumes 10, 11 et 14. Le film adapte les volumes 12-13. Reprendre au volume 15 pour la suite."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga progresse lentement. Recommander le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard. Pour la suite après la saison 4 (et le film), lisez le Light Novel Volume 15.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Overlord après la saison 4 ? Volume 15 du Light Novel (le film couvre les volumes 12-13).",
+        "keywords": ["overlord light novel", "overlord volume 15", "ainz ooal gown"],
+        "alternate_titles": ["オーバーロード", "OVL"]
+      },
+      "tags": ["isekai", "fantasy", "dark", "strategy"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "tensura",
+      "title_en": "That Time I Got Reincarnated as a Slime",
+      "title_jp": "転生したらスライムだった件",
+      "title_fr": "Moi, quand je me réincarne en Slime",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 3",
+        "season": 3,
+        "arc": "Founding of Tempest Federation",
+        "air_date": "2024-09-27"
+      },
+      "light_novel_continuation": {
+        "volume": 10,
+        "note": "La saison 3 adapte la fin du volume 9. Le volume 10 continue l'histoire de Rimuru."
+      },
+      "manga_continuation": {
+        "chapter": 119,
+        "note": "EXCEPTION: Le manga suit bien l'anime. La saison 3 finit à la fin du LN Vol 9 / Manga Ch 119."
+      },
+      "manga_adaptation_info": {
+        "status": "up_to_date",
+        "last_chapter": 119
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Vous pouvez lire le manga (chapitre 119) OU le Light Novel (volume 10).",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre TenSura après la saison 3 ? Chapitre 119 (manga) ou Volume 10 (LN) pour la suite de Rimuru.",
+        "keywords": ["tensura manga", "slime light novel", "rimuru tempest"],
+        "alternate_titles": ["TenSura", "Slime Isekai", "転スラ"]
+      },
+      "tags": ["isekai", "fantasy", "action", "nation building"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "konosuba",
+      "title_en": "KonoSuba: God's Blessing on This Wonderful World!",
+      "title_jp": "この素晴らしい世界に祝福を!",
+      "title_fr": "KonoSuba",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 3",
+        "season": 3,
+        "arc": "Princess Arc",
+        "air_date": "2024-06-12"
+      },
+      "light_novel_continuation": {
+        "volume": 8,
+        "note": "La saison 3 adapte les volumes 6-7. Le volume 8 continue les aventures de Kazuma et son équipe."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga progresse lentement. Recommander le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard sur l'anime. Pour continuer, lisez le Light Novel Volume 8.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer KonoSuba après la saison 3 ? Volume 8 du Light Novel (le manga est en retard).",
+        "keywords": ["konosuba light novel", "konosuba volume 8", "kazuma aqua"],
+        "alternate_titles": ["このすば", "Kono Subarashii Sekai"]
+      },
+      "tags": ["isekai", "comedy", "fantasy", "parody"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "classroom-of-the-elite",
+      "title_en": "Classroom of the Elite",
+      "title_jp": "ようこそ実力至上主義の教室へ",
+      "title_fr": "Classroom of the Elite",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 3",
+        "season": 3,
+        "arc": "Year 1 Finale",
+        "air_date": "2024-03-27"
+      },
+      "light_novel_continuation": {
+        "volume": 1,
+        "note": "La saison 3 finit l'Année 1 (Volume 11.5). Pour continuer, commencez l'Année 2 Volume 1."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga de l'Année 1 n'est même pas terminé. Recommander le Light Novel obligatoirement."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est très en retard. Pour continuer après la saison 3, vous DEVEZ lire le Light Novel Année 2 Volume 1.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Classroom of the Elite après la saison 3 ? Année 2 Volume 1 du Light Novel (manga très en retard).",
+        "keywords": ["classroom of the elite light novel", "youkoso jitsuryoku", "year 2"],
+        "alternate_titles": ["YouJitsu", "ようこそ実力至上主義の教室へ", "COTE"]
+      },
+      "tags": ["psychological", "school", "drama", "strategy"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "shield-hero",
+      "title_en": "The Rising of the Shield Hero",
+      "title_jp": "盾の勇者の成り上がり",
+      "title_fr": "The Rising of the Shield Hero",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 3",
+        "season": 3,
+        "arc": "Spirit Tortoise / Kizuna's World",
+        "air_date": "2023-12-22"
+      },
+      "light_novel_continuation": {
+        "volume": 13,
+        "note": "La saison 3 finit au volume 12. Le volume 13 continue l'histoire de Naofumi."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga est autour du volume 11. Recommander le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard. Pour continuer, lisez le Light Novel Volume 13.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Shield Hero après la saison 3 ? Volume 13 du Light Novel (manga en retard).",
+        "keywords": ["shield hero light novel", "tate no yuusha volume 13", "naofumi"],
+        "alternate_titles": ["Tate no Yuusha", "盾の勇者", "Shield Hero"]
+      },
+      "tags": ["isekai", "fantasy", "action", "revenge"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "goblin-slayer",
+      "title_en": "Goblin Slayer",
+      "title_jp": "ゴブリンスレイヤー",
+      "title_fr": "Goblin Slayer",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Defense of the Water Town",
+        "air_date": "2023-12-23"
+      },
+      "light_novel_continuation": {
+        "volume": 9,
+        "note": "La saison 2 adapte les volumes 6-8. Le volume 9 continue l'histoire."
+      },
+      "manga_continuation": {
+        "chapter": 55,
+        "note": "Le manga est une bonne alternative ici et suit bien l'histoire."
+      },
+      "manga_adaptation_info": {
+        "status": "up_to_date",
+        "last_chapter": 55
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Vous pouvez lire le manga (chapitre 55+) OU le Light Novel (volume 9).",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Goblin Slayer après la saison 2 ? Chapitre 55+ (manga) ou Volume 9 (LN).",
+        "keywords": ["goblin slayer manga", "goblin slayer light novel", "volume 9"],
+        "alternate_titles": ["ゴブリンスレイヤー", "GS"]
+      },
+      "tags": ["dark fantasy", "action", "adventure", "seinen"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "no-game-no-life",
+      "title_en": "No Game No Life",
+      "title_jp": "ノーゲーム・ノーライフ",
+      "title_fr": "No Game No Life",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 1 + Film Zero",
+        "season": 1,
+        "episode": 12,
+        "arc": "Elkia Federation",
+        "air_date": "2014-06-25"
+      },
+      "light_novel_continuation": {
+        "volume": 4,
+        "note": "L'anime adapte les volumes 1-3. Le film 'Zero' adapte le volume 6 (préquelle). Pour continuer l'histoire principale, commencez au volume 4."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga progresse lentement. Recommander le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le film adapte le volume 6 (préquelle). Pour continuer après la saison 1, lisez le Light Novel Volume 4.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer No Game No Life après la saison 1 ? Volume 4 du Light Novel (le film adapte le volume 6 - préquelle).",
+        "keywords": ["no game no life light novel", "ngnl volume 4", "sora shiro"],
+        "alternate_titles": ["NGNL", "ノーゲーム・ノーライフ"]
+      },
+      "tags": ["isekai", "fantasy", "strategy", "comedy"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "kumo-desu-ga",
+      "title_en": "So I'm a Spider, So What?",
+      "title_jp": "蜘蛛ですが、なにか?",
+      "title_fr": "So I'm a Spider, So What?",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 1 (24 épisodes)",
+        "season": 1,
+        "episode": 24,
+        "arc": "Elf Village Battle",
+        "air_date": "2021-07-03"
+      },
+      "light_novel_continuation": {
+        "volume": 6,
+        "note": "L'anime a une fin originale/bâclée. Recommandation FORTE de reprendre le Light Novel au volume 3-5 pour comprendre l'histoire correctement."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga est en retard et ne couvre pas tout. Recommander le Light Novel obligatoirement."
+      },
+      "status": "ongoing",
+      "transition_type": "divergent",
+      "warning_flag": true,
+      "warning_message": "🔴 FIN PROBLÉMATIQUE: L'anime a une fin originale bâclée qui omet des éléments importants. Il est FORTEMENT recommandé de lire le Light Novel depuis le volume 3-5.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Kumo Desu ga après la saison 1 ? Volume 3-6 du Light Novel (fin anime bâclée et incomplète).",
+        "keywords": ["kumo desu ga light novel", "spider isekai", "kumoko"],
+        "alternate_titles": ["Kumo Desu ga, Nani ka?", "蜘蛛ですが、なにか?", "Spider Isekai"]
+      },
+      "tags": ["isekai", "fantasy", "action", "evolution"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "eminence-in-shadow",
+      "title_en": "The Eminence in Shadow",
+      "title_jp": "陰の実力者になりたくて!",
+      "title_fr": "The Eminence in Shadow",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Lawless City Arc",
+        "air_date": "2023-12-20"
+      },
+      "light_novel_continuation": {
+        "volume": 4,
+        "note": "La saison 2 finit au milieu du volume 4. Vous pouvez reprendre au volume 4 ou continuer depuis le milieu."
+      },
+      "manga_continuation": {
+        "chapter": 46,
+        "note": "Le manga chapitre 46 correspond approximativement à la fin de la saison 2."
+      },
+      "manga_adaptation_info": {
+        "status": "up_to_date",
+        "last_chapter": 46
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Vous pouvez lire le manga (chapitre 46) OU le Light Novel (volume 4).",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Eminence in Shadow après la saison 2 ? Chapitre 46 (manga) ou Volume 4 (LN).",
+        "keywords": ["eminence in shadow manga", "kage no jitsuryokusha", "cid kagenou"],
+        "alternate_titles": ["Kage-Jitsu", "陰の実力者になりたくて!", "KageJitsu"]
+      },
+      "tags": ["isekai", "comedy", "action", "chuunibyou"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "saga-of-tanya",
+      "title_en": "Saga of Tanya the Evil",
+      "title_jp": "幼女戦記",
+      "title_fr": "Saga of Tanya the Evil",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Film - Tanya the Evil Movie",
+        "arc": "Battle of Moscow",
+        "air_date": "2019-02-08"
+      },
+      "light_novel_continuation": {
+        "volume": 5,
+        "note": "Le film couvre le volume 4. Pour continuer l'histoire, commencez au volume 5."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga progresse lentement. Recommander le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard. Après le film, lisez le Light Novel Volume 5.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Saga of Tanya après le film ? Volume 5 du Light Novel (le film couvre le volume 4).",
+        "keywords": ["tanya the evil light novel", "youjo senki volume 5", "tanya degurechaff"],
+        "alternate_titles": ["Youjo Senki", "幼女戦記"]
+      },
+      "tags": ["isekai", "military", "dark", "war"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "86-eighty-six",
+      "title_en": "86 EIGHTY-SIX",
+      "title_jp": "86-エイティシックス-",
+      "title_fr": "86",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 1 (23 épisodes)",
+        "season": 1,
+        "episode": 23,
+        "arc": "Republic Arc + Giad Arc",
+        "air_date": "2022-03-19"
+      },
+      "light_novel_continuation": {
+        "volume": 4,
+        "note": "L'anime adapte parfaitement les volumes 1-3. Le volume 4 continue l'histoire de Shin et Lena."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga progresse lentement. Recommander le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard. Pour continuer, lisez le Light Novel Volume 4.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre 86 EIGHTY-SIX après la saison 1 ? Volume 4 du Light Novel (adaptation parfaite des volumes 1-3).",
+        "keywords": ["86 eighty six light novel", "86 volume 4", "shin lena"],
+        "alternate_titles": ["86", "エイティシックス"]
+      },
+      "tags": ["mecha", "military", "drama", "sci-fi"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "danmachi",
+      "title_en": "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+      "title_jp": "ダンジョンに出会いを求めるのは間違っているだろうか",
+      "title_fr": "DanMachi",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 4",
+        "season": 4,
+        "arc": "Ryuu Arc",
+        "air_date": "2023-03-23"
+      },
+      "light_novel_continuation": {
+        "volume": 15,
+        "note": "La saison 4 couvre les volumes 12-14 (Arc Ryuu). Reprendre au volume 15 pour la suite."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: Le manga progresse lentement. Recommander le Light Novel."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: Le manga est en retard. Pour continuer, lisez le Light Novel Volume 15.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer DanMachi après la saison 4 ? Volume 15 du Light Novel après l'arc Ryuu.",
+        "keywords": ["danmachi light novel", "danmachi volume 15", "bell cranel"],
+        "alternate_titles": ["DanMachi", "ダンまち", "Is It Wrong"]
+      },
+      "tags": ["fantasy", "adventure", "action", "romance"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "bookworm",
+      "title_en": "Ascendance of a Bookworm",
+      "title_jp": "本好きの下剋上",
+      "title_fr": "Ascendance of a Bookworm",
+      "source_material": "light_novel",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 3",
+        "season": 3,
+        "arc": "Part 2 - Temple Arc",
+        "air_date": "2022-06-21"
+      },
+      "light_novel_continuation": {
+        "volume": 1,
+        "note": "L'anime couvre jusqu'à la Partie 2. Pour continuer, commencez la Partie 3 Volume 1 du Light Novel."
+      },
+      "manga_adaptation_info": {
+        "status": "behind_anime",
+        "warning": "⚠️ MANGA EN RETARD: L'anime va plus loin que le manga. Le Light Novel est OBLIGATOIRE."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ IMPORTANT: L'anime a dépassé le manga. Pour continuer, vous DEVEZ lire le Light Novel Partie 3 Volume 1.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Bookworm après la saison 3 ? Partie 3 Volume 1 du Light Novel (l'anime dépasse le manga).",
+        "keywords": ["bookworm light novel", "honzuki no gekokujou", "myne"],
+        "alternate_titles": ["Honzuki no Gekokujou", "本好きの下剋上"]
+      },
+      "tags": ["isekai", "fantasy", "slice of life", "books"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "tokyo-ghoul",
+      "title_en": "Tokyo Ghoul",
+      "title_jp": "東京喰種トーキョーグール",
+      "title_fr": "Tokyo Ghoul",
+      "source_material": "manga",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Saison 2 (Root A) - Fin originale",
+        "season": 2,
+        "arc": "Root A (Non-canon)",
+        "air_date": "2015-03-27"
+      },
+      "manga_continuation": {
+        "chapter": 1,
+        "note": "La saison 2 (Root A) est NON-CANON et raconte une histoire différente du manga."
+      },
+      "status": "completed",
+      "transition_type": "original_ending",
+      "warning_flag": true,
+      "warning_message": "🔴 ADAPTATION CASSÉE: La Saison 2 (Root A) n'est PAS canon. L'histoire est totalement différente du manga. Il est FORTEMENT recommandé de reprendre au DÉBUT du manga.",
+      "recommendation": "Reprenez la lecture depuis le chapitre 1 pour l'expérience authentique.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Tokyo Ghoul saison 2 Root A est non-canon. Pour l'histoire authentique, lisez le manga depuis le chapitre 1.",
+        "keywords": ["tokyo ghoul manga", "tokyo ghoul root a non canon", "kaneki"],
+        "alternate_titles": ["東京喰種", "TG"]
+      },
+      "tags": ["seinen", "dark fantasy", "horror", "psychological"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "promised-neverland",
+      "title_en": "The Promised Neverland",
+      "title_jp": "約束のネバーランド",
+      "title_fr": "The Promised Neverland",
+      "source_material": "manga",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Rushed Ending (Skipped Arcs)",
+        "air_date": "2021-03-26"
+      },
+      "manga_continuation": {
+        "chapter": 37,
+        "note": "La saison 2 a SAUTÉ l'arc Goldy Pond (environ 50 chapitres) et a créé une fin précipitée originale."
+      },
+      "status": "completed",
+      "transition_type": "original_ending",
+      "warning_flag": true,
+      "warning_message": "🔴 CONTENU MANQUANT: La Saison 2 a sauté l'arc \"Goldy Pond\" (50 chapitres majeurs). Ne continuez PAS après la saison 2, lisez depuis le chapitre 37.",
+      "recommendation": "Pour comprendre l'histoire complète et vivre l'arc Goldy Pond, lisez depuis le chapitre 37.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "The Promised Neverland saison 2 a sauté l'arc Goldy Pond. Lisez le manga depuis le chapitre 37 pour l'histoire complète.",
+        "keywords": ["promised neverland manga", "goldy pond arc", "yakusoku no neverland"],
+        "alternate_titles": ["Yakusoku no Neverland", "約束のネバーランド", "TPN"]
+      },
+      "tags": ["shounen", "mystery", "psychological", "thriller"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "soul-eater",
+      "title_en": "Soul Eater",
+      "title_jp": "ソウルイーター",
+      "title_fr": "Soul Eater",
+      "source_material": "manga",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Episode 51 - Fin originale",
+        "episode": 51,
+        "arc": "Brew Arc (Divergence)",
+        "air_date": "2009-03-30"
+      },
+      "manga_continuation": {
+        "chapter": 36,
+        "note": "L'anime diverge totalement à l'épisode 36 (Arc Brew). Le manga a une histoire différente sur 70+ chapitres."
+      },
+      "status": "completed",
+      "transition_type": "original_ending",
+      "warning_flag": true,
+      "warning_message": "🔴 FIN ORIGINALE: L'anime diverge complètement à l'épisode 36 (Arc Brew). Le manga a une histoire totalement différente et bien plus longue.",
+      "recommendation": "Pour l'histoire originale de l'auteur, lisez le manga depuis le chapitre 36.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Soul Eater anime a une fin originale. Pour l'histoire du manga (très différente), lisez depuis le chapitre 36.",
+        "keywords": ["soul eater manga", "soul eater divergence", "maka albarn"],
+        "alternate_titles": ["ソウルイーター", "SE"]
+      },
+      "tags": ["shounen", "action", "supernatural", "comedy"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "akame-ga-kill",
+      "title_en": "Akame ga Kill!",
+      "title_jp": "アカメが斬る!",
+      "title_fr": "Akame ga Kill!",
+      "source_material": "manga",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Episode 24 - Fin originale",
+        "episode": 24,
+        "arc": "Original Ending",
+        "air_date": "2014-12-14"
+      },
+      "manga_continuation": {
+        "chapter": 36,
+        "note": "L'anime a inventé sa propre fin. Le manga continue avec l'arc Wild Hunt et des destins différents pour les personnages."
+      },
+      "status": "completed",
+      "transition_type": "original_ending",
+      "warning_flag": true,
+      "warning_message": "🔴 FIN ORIGINALE: L'anime a inventé sa propre fin. Le manga continue avec l'arc Wild Hunt et des destins totalement différents pour plusieurs personnages.",
+      "recommendation": "Pour voir l'histoire originale complète, lisez le manga depuis le chapitre 36.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Akame ga Kill anime a une fin originale. Le manga continue avec l'arc Wild Hunt et des fins différentes (chapitre 36+).",
+        "keywords": ["akame ga kill manga", "akame ga kill divergence", "night raid"],
+        "alternate_titles": ["アカメが斬る!", "AgK"]
+      },
+      "tags": ["shounen", "action", "dark", "tragedy"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "claymore",
+      "title_en": "Claymore",
+      "title_jp": "クレイモア",
+      "title_fr": "Claymore",
+      "source_material": "manga",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Episode 26 - Fin originale",
+        "episode": 26,
+        "arc": "Northern Campaign (Original End)",
+        "air_date": "2007-09-25"
+      },
+      "manga_continuation": {
+        "chapter": 60,
+        "note": "L'anime invente une fin à la Bataille du Nord. Le manga continue BIEN après avec de nombreux arcs importants."
+      },
+      "status": "completed",
+      "transition_type": "original_ending",
+      "warning_flag": true,
+      "warning_message": "🔴 FIN ORIGINALE: L'anime invente une fin à la Bataille du Nord. Le manga continue sur 100+ chapitres avec l'histoire complète de Clare.",
+      "recommendation": "Pour l'histoire complète, lisez le manga depuis le chapitre 60 (ou depuis le début pour l'expérience intégrale).",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Claymore anime a une fin originale. Le manga continue après la Bataille du Nord avec 100+ chapitres (chapitre 60+).",
+        "keywords": ["claymore manga", "claymore northern campaign", "clare"],
+        "alternate_titles": ["クレイモア"]
+      },
+      "tags": ["seinen", "action", "dark fantasy", "demons"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "blue-exorcist",
+      "title_en": "Blue Exorcist",
+      "title_jp": "青の祓魔師",
+      "title_fr": "Blue Exorcist",
+      "source_material": "manga",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Saison 3 (Shimane Illuminati Saga)",
+        "season": 3,
+        "arc": "Illuminati Arc",
+        "air_date": "2024-03-31"
+      },
+      "manga_continuation": {
+        "chapter": 34,
+        "note": "La saison 1 avait des épisodes filler (16-25). La saison 2 (Kyoto Saga) et saison 3 (Illuminati) ignorent cette fin filler et suivent le manga."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ CONTINUITÉ COMPLEXE: La Saison 1 a une fin filler (Épisodes 16-25). La Saison 2 (Kyoto) et Saison 3 (Illuminati) suivent le manga en ignorant les fillers.",
+      "recommendation": "Si vous voulez lire le manga, commencez au chapitre 34 après la saison 3, ou depuis le chapitre 13 après la saison 1 (avant les fillers).",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Blue Exorcist saison 1 a des fillers (ep 16-25). Saisons 2-3 suivent le manga. Lisez depuis le chapitre 34 après la saison 3.",
+        "keywords": ["blue exorcist manga", "ao no exorcist chapitre", "rin okumura"],
+        "alternate_titles": ["Ao no Exorcist", "青の祓魔師", "AoEx"]
+      },
+      "tags": ["shounen", "action", "supernatural", "demons"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "berserk",
+      "title_en": "Berserk",
+      "title_jp": "ベルセルク",
+      "title_fr": "Berserk",
+      "source_material": "manga",
+      "priority": "P2",
+      "last_anime": {
+        "event": "Anime 1997 - Eclipse",
+        "arc": "Golden Age Arc",
+        "air_date": "1997-04-01"
+      },
+      "manga_continuation": {
+        "chapter": 87,
+        "note": "L'anime de 1997 coupe des personnages clés (Skull Knight) et s'arrête abruptement à l'Éclipse. Le manga continue bien après."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ LIRE DEPUIS LE DÉBUT: L'anime de 1997 coupe des personnages clés (Skull Knight) et la fin est abrupte. Le manga a beaucoup plus de contenu avant et après l'Arc de l'Âge d'Or.",
+      "recommendation": "Il est fortement recommandé de lire Berserk depuis le DÉBUT pour l'expérience complète. Sinon, reprenez au chapitre 87 après l'Éclipse.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Berserk anime 1997 coupe du contenu. Lisez le manga depuis le début ou chapitre 87 après l'Éclipse pour l'histoire complète.",
+        "keywords": ["berserk manga", "berserk golden age", "guts"],
+        "alternate_titles": ["ベルセルク"]
+      },
+      "tags": ["seinen", "dark fantasy", "action", "tragedy"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "fullmetal-alchemist-2003",
+      "title_en": "Fullmetal Alchemist (2003)",
+      "title_jp": "鋼の錬金術師",
+      "title_fr": "Fullmetal Alchemist",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Anime 2003 - Histoire originale",
+        "arc": "Original Story",
+        "air_date": "2004-10-02"
+      },
+      "manga_continuation": {
+        "chapter": 1,
+        "note": "L'anime de 2003 est une HISTOIRE ORIGINALE totalement différente du manga."
+      },
+      "status": "completed",
+      "transition_type": "original_ending",
+      "warning_flag": true,
+      "warning_message": "🔴 HISTOIRE DIFFÉRENTE: L'anime de 2003 est une histoire ORIGINALE totalement différente du manga. Regardez Fullmetal Alchemist: Brotherhood (2009) pour l'adaptation fidèle ou lisez le manga depuis le début.",
+      "recommendation": "Regardez FMA: Brotherhood (adaptation fidèle) ou lisez le manga depuis le chapitre 1.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Fullmetal Alchemist 2003 a une histoire originale. Regardez Brotherhood ou lisez le manga pour l'histoire d'origine.",
+        "keywords": ["fullmetal alchemist manga", "fma brotherhood", "edward elric"],
+        "alternate_titles": ["Hagane no Renkinjutsushi", "鋼の錬金術師", "FMA"]
+      },
+      "tags": ["shounen", "action", "fantasy", "adventure"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "noragami",
+      "title_en": "Noragami",
+      "title_jp": "ノラガミ",
+      "title_fr": "Noragami",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 2 (Aragoto)",
+        "season": 2,
+        "arc": "Bishamon Arc",
+        "air_date": "2015-12-26"
+      },
+      "manga_continuation": {
+        "chapter": 38,
+        "note": "La saison 2 finit ici. Le manga est TERMINÉ et continue l'histoire de Yato, Hiyori et Yukine jusqu'à la conclusion."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Le manga est terminé (109 chapitres). Vous pouvez lire l'histoire complète depuis le chapitre 38.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Noragami après la saison 2 ? Chapitre 38 pour continuer l'histoire de Yato. Le manga est terminé (109 chapitres).",
+        "keywords": ["noragami manga", "noragami aragoto", "yato hiyori"],
+        "alternate_titles": ["ノラガミ", "Stray God"]
+      },
+      "tags": ["shounen", "supernatural", "action", "comedy"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "seraph-of-the-end",
+      "title_en": "Seraph of the End",
+      "title_jp": "終わりのセラフ",
+      "title_fr": "Seraph of the End",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Nagoya Arc",
+        "air_date": "2015-12-26"
+      },
+      "manga_continuation": {
+        "chapter": 41,
+        "note": "La fin de la saison 2 est légèrement confuse et diverge un peu. Le chapitre 41 réaligne l'intrigue."
+      },
+      "status": "ongoing",
+      "transition_type": "complex",
+      "warning_flag": true,
+      "warning_message": "⚠️ DIVERGENCE MINEURE: La fin de la saison 2 est confuse et change légèrement certains événements. Le chapitre 41 réaligne l'intrigue.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Seraph of the End après la saison 2 ? Chapitre 41 pour réaligner l'intrigue et continuer l'histoire de Yuichiro.",
+        "keywords": ["seraph of the end manga", "owari no seraph chapitre", "yuichiro"],
+        "alternate_titles": ["Owari no Seraph", "終わりのセラフ", "OnS"]
+      },
+      "tags": ["shounen", "action", "supernatural", "vampires"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "kaguya-sama",
+      "title_en": "Kaguya-sama: Love is War",
+      "title_jp": "かぐや様は告らせたい~天才たちの恋愛頭脳戦~",
+      "title_fr": "Kaguya-sama: Love is War",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Film - First Kiss That Never Ends",
+        "arc": "Cultural Festival / Confession",
+        "air_date": "2022-12-17"
+      },
+      "manga_continuation": {
+        "chapter": 152,
+        "note": "Le film adapte jusqu'au chapitre 151 (la confession). Le chapitre 152 est la suite. Note: L'anime a sauté certains chapitres, lecture depuis le chapitre 138 recommandée."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": true,
+      "warning_message": "⚠️ CHAPITRES SAUTÉS: L'anime a sauté certains chapitres. Si vous n'avez pas vu le film, commencez au chapitre 138. Sinon, chapitre 152.",
+      "recommendation": "Le manga est terminé (281 chapitres). Vous pouvez lire jusqu'à la fin.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Kaguya-sama après le film ? Chapitre 152 (ou chapitre 138 si film non vu). Manga terminé.",
+        "keywords": ["kaguya-sama manga", "love is war chapitre", "confession"],
+        "alternate_titles": ["Kaguya-sama", "かぐや様", "Love is War"]
+      },
+      "tags": ["seinen", "romance", "comedy", "school"],
+      "popularity_score": 10,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "nagatoro",
+      "title_en": "Don't Toy with Me, Miss Nagatoro",
+      "title_jp": "イジらないで、長瀞さん",
+      "title_fr": "Arrête de me chauffer, Nagatoro",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "School Festival Arc",
+        "air_date": "2023-06-18"
+      },
+      "manga_continuation": {
+        "chapter": 91,
+        "note": "La saison 2 finit au chapitre 91. Le manga continue avec la progression de la relation Nagatoro-Senpai."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Nagatoro après la saison 2 ? Chapitre 91 pour voir la suite de la relation entre Nagatoro et Senpai.",
+        "keywords": ["nagatoro manga", "ijiranaide nagatoro-san", "teasing romance"],
+        "alternate_titles": ["Ijiranaide, Nagatoro-san", "イジらないで、長瀞さん"]
+      },
+      "tags": ["shounen", "romance", "comedy", "teasing"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "komi-san",
+      "title_en": "Komi Can't Communicate",
+      "title_jp": "古見さんは、コミュ症です。",
+      "title_fr": "Komi cherche ses mots",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 2",
+        "season": 2,
+        "arc": "Second Year Arc",
+        "air_date": "2022-06-23"
+      },
+      "manga_continuation": {
+        "chapter": 129,
+        "note": "La saison 2 finit au chapitre 129. Le manga continue avec de nouveaux amis et la progression de la relation Tadano-Komi."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Komi Can't Communicate après la saison 2 ? Chapitre 129 pour la suite des aventures de Komi.",
+        "keywords": ["komi san manga", "komi can't communicate chapitre", "tadano"],
+        "alternate_titles": ["Komi-san wa, Comyushou desu", "古見さんは、コミュ症です。"]
+      },
+      "tags": ["shounen", "romance", "comedy", "slice of life"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "dress-up-darling",
+      "title_en": "My Dress-Up Darling",
+      "title_jp": "その着せ替え人形は恋をする",
+      "title_fr": "My Dress-Up Darling",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "First Cosplay Events",
+        "air_date": "2022-03-27"
+      },
+      "manga_continuation": {
+        "chapter": 39,
+        "note": "La saison 1 finit au chapitre 39. Le manga continue avec de nouveaux projets cosplay et l'évolution de la relation Gojo-Marin."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer My Dress-Up Darling après la saison 1 ? Chapitre 39 pour de nouveaux cosplays et la suite de Marin et Gojo.",
+        "keywords": ["dress up darling manga", "sono bisque doll chapitre", "marin kitagawa"],
+        "alternate_titles": ["Sono Bisque Doll wa Koi wo Suru", "その着せ替え人形は恋をする", "Bisque Doll"]
+      },
+      "tags": ["seinen", "romance", "comedy", "cosplay"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "rent-a-girlfriend",
+      "title_en": "Rent-a-Girlfriend",
+      "title_jp": "彼女、お借りします",
+      "title_fr": "Rent-a-Girlfriend",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 3",
+        "season": 3,
+        "arc": "Movie Production Arc",
+        "air_date": "2023-09-16"
+      },
+      "manga_continuation": {
+        "chapter": 167,
+        "note": "La saison 3 finit au chapitre 167. Le manga continue (avec beaucoup de drama et de lenteur narrative)."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": true,
+      "warning_message": "⚠️ AVERTISSEMENT: Le manga est connu pour sa progression narrative très lente et frustrante. Gérez vos attentes.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Rent-a-Girlfriend après la saison 3 ? Chapitre 167 (attention : progression lente dans le manga).",
+        "keywords": ["rent a girlfriend manga", "kanojo okarishimasu chapitre", "chizuru"],
+        "alternate_titles": ["Kanojo, Okarishimasu", "彼女、お借りします", "KanoKari"]
+      },
+      "tags": ["shounen", "romance", "comedy", "drama"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "bocchi-the-rock",
+      "title_en": "Bocchi the Rock!",
+      "title_jp": "ぼっち・ざ・ろっく!",
+      "title_fr": "Bocchi the Rock!",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "First Live Performances",
+        "air_date": "2022-12-25"
+      },
+      "manga_continuation": {
+        "chapter": 21,
+        "note": "L'anime finit au chapitre 21. Le manga continue avec de nouveaux concerts et le développement de Kessoku Band."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Bocchi the Rock! après la saison 1 ? Chapitre 21 pour suivre Hitori et Kessoku Band.",
+        "keywords": ["bocchi the rock manga", "hitori gotoh", "kessoku band"],
+        "alternate_titles": ["ぼっち・ざ・ろっく!", "Bocchi"]
+      },
+      "tags": ["4-koma", "slice of life", "music", "comedy"],
+      "popularity_score": 9,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "call-of-the-night",
+      "title_en": "Call of the Night",
+      "title_jp": "よふかしのうた",
+      "title_fr": "Call of the Night",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Meeting Nazuna Arc",
+        "air_date": "2022-09-30"
+      },
+      "manga_continuation": {
+        "chapter": 46,
+        "note": "La saison 1 finit au chapitre 46. Le manga continue avec l'approfondissement de la relation Ko-Nazuna et de nouveaux vampires."
+      },
+      "status": "ongoing",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "affiliate_links": {},
+      "seo": {
+        "description": "Reprendre Call of the Night après la saison 1 ? Chapitre 46 pour continuer l'histoire nocturne de Ko et Nazuna.",
+        "keywords": ["call of the night manga", "yofukashi no uta chapitre", "nazuna"],
+        "alternate_titles": ["Yofukashi no Uta", "よふかしのうた"]
+      },
+      "tags": ["seinen", "romance", "supernatural", "vampire"],
+      "popularity_score": 8,
+      "last_updated": "2026-01-04"
+    },
+    {
+      "series_id": "insomniacs-after-school",
+      "title_en": "Insomniacs After School",
+      "title_jp": "君は放課後インソムニア",
+      "title_fr": "Insomniacs After School",
+      "source_material": "manga",
+      "priority": "P3",
+      "last_anime": {
+        "event": "Fin de Saison 1",
+        "season": 1,
+        "arc": "Astronomy Club Arc",
+        "air_date": "2023-06-27"
+      },
+      "manga_continuation": {
+        "chapter": 56,
+        "note": "L'anime finit au chapitre 56. Le manga continue jusqu'à sa conclusion (terminé au chapitre 125)."
+      },
+      "status": "completed",
+      "transition_type": "direct",
+      "warning_flag": false,
+      "recommendation": "Le manga est terminé (125 chapitres). Vous pouvez lire jusqu'à la fin depuis le chapitre 56.",
+      "affiliate_links": {},
+      "seo": {
+        "description": "Continuer Insomniacs After School après la saison 1 ? Chapitre 56. Le manga est terminé (125 chapitres).",
+        "keywords": ["insomniacs after school manga", "kimi wa houkago insomnia", "astronomy"],
+        "alternate_titles": ["Kimi wa Houkago Insomnia", "君は放課後インソムニア"]
+      },
+      "tags": ["shounen", "romance", "slice of life", "astronomy"],
+      "popularity_score": 7,
+      "last_updated": "2026-01-04"
+    }
+  ]
+}

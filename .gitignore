@@ -42,3 +42,8 @@ next-env.d.ts
 
 SPECS.md
 .idea/
+
+# Documentation files (development notes)
+*_SUMMARY.md
+*_DEPLOYMENT.md
+EXEMPLE_*.md

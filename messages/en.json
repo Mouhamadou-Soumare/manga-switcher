@@ -25,10 +25,14 @@
     "noDataYet": "No data yet",
     "helpCommunity": "Help the community by indicating the corresponding chapter.",
     "previousCheckpoints": "Previous checkpoints",
+    "communityAlternatives": "👥 Community Alternatives",
     "noHistory": "No history yet",
     "importantNote": "Important note",
     "notFound": "Anime not found",
-    "notFoundDescription": "This anime doesn't exist or the slug is incorrect."
+    "notFoundDescription": "This anime doesn't exist or the slug is incorrect.",
+    "officialVerified": "Official Verified Data",
+    "lastAnime": "Last anime",
+    "mangaBehindAnime": "Manga is behind the anime"
   },
   "contribution": {
     "addCheckpoint": "Add checkpoint",
