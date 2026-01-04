@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getLocale, getTranslations } from 'next-intl/server';
+import { Analytics } from '@vercel/analytics/react';
 import "./globals.css";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -88,6 +89,7 @@ export default async function RootLayout({
             {children}
           </main>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
